@@ -190,6 +190,7 @@ input:active{
   max-height: 149.406px;
 }
 .cr_s{
+  z-index: 99;
   max-height: 49px;
   min-width: 111.6px;
   display: flex;
@@ -273,8 +274,9 @@ input:active{
 }
 .hd_p{
   width: 111.604px;
-  height: 140.406px;
+  height: 150.406px;
   object-fit: cover;
+  z-index: -1;
   padding: 2px;
 }
 .hl_mp:hover,
@@ -770,7 +772,7 @@ input:active{
 }
 .hd_p{
   width: 97px;
-  height: 107.44px;
+  height: 125px;
   object-fit: cover;
   padding: 2px;
 }
