@@ -827,7 +827,7 @@ input:active{
 }
 .mf_md div{
   margin: 8px;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
   cursor: pointer;
 }
