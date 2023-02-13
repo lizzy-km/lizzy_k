@@ -285,7 +285,7 @@ const Mid = () => {
                 <div  className="post_react">
                     <div  className="p_r_count">
                         <div  className="p_l_c">
-                            1.2M Likes
+                            200k others
                         </div>
                         <div  className="p_c_c">
                             50M comments
