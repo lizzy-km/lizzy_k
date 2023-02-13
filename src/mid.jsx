@@ -143,7 +143,7 @@ const Mid = () => {
                             <div className="hl_c">
                                 
                                 <div className="hl_m">
-                                    <img className=" hd_p br_1" src="/src/assets/react.svg"alt=""/>
+                                    <img className=" hd_p br_1" src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"alt=""/>
                                 </div>
                                 <div className="cr_s">
                                     <p className="s_add">+</p>

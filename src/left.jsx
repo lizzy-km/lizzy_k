@@ -8,7 +8,7 @@ const Left = () => {
 
 <div  class="left_feed">
         <a href="" class="lf_me ">
-            <img  class="lf_p m_p" src="/src/assets/react.svg" alt=""/>
+            <img  class="lf_p m_p" src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg" alt=""/>
             <div  class="lf_n">
                 Kaung Myat Soe
             </div>
