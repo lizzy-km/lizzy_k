@@ -186,7 +186,7 @@ const Mid = () => {
                     <a href="">
                         <img   className="pe_m_p " 
                   
-                    src="/src/assets/react.svg"
+                    src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"
                      alt=""/> 
                     </a>
                  
