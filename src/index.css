@@ -673,8 +673,9 @@ input:active{
 .mf_highlight{
   max-width: 380px;
   min-width:380px;
-  max-height:172.44px;
-  overflow: scroll;
+  height:172.44px;
+  /* overflow: auto; */
+  
   margin-left:-50px;
 }
 .mf_highlight::-webkit-scrollbar{
@@ -683,6 +684,8 @@ input:active{
 .highlight_item{
   width: 97px;
   height: 172.44px;
+  
+ 
   
 }
 .hd_p{
@@ -720,6 +723,8 @@ input:active{
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+ 
+  
 }
 .hl_c div{
   cursor: pointer;
@@ -789,6 +794,8 @@ input:active{
   height: 172.44px;
   display: flex;
   flex-direction: row;
+  /* padding-bottom:-20px ; */
+  
 
 }
 
