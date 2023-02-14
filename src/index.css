@@ -46,6 +46,7 @@ section{
   height: 56px;
   width: 100%;
   background-color: #222222;
+  border-bottom: .5px solid rgba(68, 68, 68, 0.666);
  text-align: center;
  display: flex;
  flex-direction: row;
@@ -501,6 +502,7 @@ input:active{
   flex-direction: row;
   justify-content: left;
   padding: 4px;
+  margin-bottom: -20px;
 }
 .lf_p{
   width: 40px;
