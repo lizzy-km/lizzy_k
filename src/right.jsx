@@ -130,7 +130,7 @@ const Right = () => {
           {girlfriends.map((gf)=>(
                 <div className="rf_usr">
                 <div className="rf_usr_p ">
-                    <img className="pf_hover" src={gf.pf} alt=""/>
+                    <img className="p_hover" src={gf.pf} alt=""/>
                 </div>
                 <div className="rf_usr_n">
                     <p>{gf.username}</p>

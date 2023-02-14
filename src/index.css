@@ -1556,6 +1556,7 @@ input:active{
 }
 .p_hover:hover{
   box-shadow: 0px 0px 8px white;
+  padding: 0px;
 }
 .cr_form{
   width: 100%;

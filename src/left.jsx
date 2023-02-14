@@ -9,7 +9,7 @@ const Left = () => {
 
 <div className="left_feed">
                 <Link to='/User' className="lf_me">
-                    <img className="lf_p" src='https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg' alt=""></img>
+                    <img className="lf_p p_hover" src='https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg' alt=""></img>
                     <div className="lf_n">
                         Kaung Myat Soe
                     </div>

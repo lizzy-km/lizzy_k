@@ -159,7 +159,7 @@ const Mid = () => {
                                     <img className=" hd_p br_1" src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"alt=""/>
                                 </div>
                                 <div className="cr_s">
-                                    <p className="s_add">+</p>
+                                    <p className="s_add p_hover">+</p>
                                     <p className="cs_t">Create story</p>
                                 </div>
                                 
@@ -175,7 +175,7 @@ const Mid = () => {
                                     <img className="hl_mp br_1 " src={gf.image} alt=""/>
                                 </div>
                                 <div className="hl_n">
-                                <img className="h_l_p pf_hover" src={gf.pf} alt=""/>
+                                <img className="h_l_p p_hover" src={gf.pf} alt=""/>
                                     <p className="hln_t">{gf.username}</p>
                                 </div>
                                 
