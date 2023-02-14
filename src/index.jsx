@@ -4,7 +4,8 @@ import Right from './right'
 import Top from './top'
 import Mid from './mid'
 import User from './User.component'
-// import Create from "./create"
+
+
 
 const Index = () => {
   // const blackpink = [

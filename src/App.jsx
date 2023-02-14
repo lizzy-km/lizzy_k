@@ -1,7 +1,7 @@
 import * as React from "react";
 // import Navbar from "react-bootstrap/Navbar";
 
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import './index.css';
 
 
@@ -9,7 +9,7 @@ import { BrowserRouter as Router , Routes, Route} from "react-router-dom";
 
 // import EditProduct from "./components/product/edit.component";
 import Sug from "./Sug.component";
-import Index from "./Index.component";
+import Index from "./index";
 // import NewFeed from "./components/product/NewFeed.component"
 import User from "./User.component";
 import Auth from "./Auth.component";

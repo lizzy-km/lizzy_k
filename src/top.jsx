@@ -1,11 +1,25 @@
 import React from "react";
+// import linearGradient from '../node_modules/styled-components'
+import {Link} from "react-router-dom"
 
 const Top = () => {
   return (
     <div class="top">
       <div className="nav_l">
-        <div className="f pf_hover">
-          <p>f</p>
+        <div className="f p_hover">
+          <Link to='/'>
+        <svg viewBox="0 0 36 36" class=" x1lliihq x1k90msu x2h7rmj x1qfuztq" fill="url(#jsc_s_2)" height="40" width="40">
+          <defs>
+          <linearGradient
+           x1="50%" x2="50%" y1="97.0782153%" y2="0%"
+            id="jsc_s_2">
+            <stop offset="0%" stop-color="#0062E0">
+            </stop>
+            <stop offset="100%" stop-color="#19AFFF"></stop>
+            </linearGradient>
+            </defs><path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path>
+            <path class="xe3v8dz" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path>
+        </svg></Link>
         </div>
         <div className="">
           <input
@@ -38,9 +52,10 @@ const Top = () => {
         </div>
         <div className="pf_hover"><svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
         </div>
+        <Link to='/Auth'>
         <a href="">
           <img className="n_r_p" src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg" alt="" />
-        </a>
+        </a></Link>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Left from './left'
 import Right from './right'
 import Top from './top'
 import Create from './create'
-import './index.css'
+// import './index.css'
 import { inject } from '@vercel/analytics'
 
 inject();

@@ -3,6 +3,7 @@ import Create from "./create"
 import {Link} from "react-router-dom"
 import { render } from "react-dom";
 import ReactDOM from 'react-dom/client';
+import './index.css';
 
 const Mid = () => {
   const girlfriends = [
@@ -222,7 +223,7 @@ const Mid = () => {
             </div>
 
         </div>
-    <div  className="ppl_ymk">
+    {/* <div  className="ppl_ymk">
                <p  className="ppl_t"> People you may know</p>
             
         <div  className="mc_hold">
@@ -252,7 +253,7 @@ const Mid = () => {
 
                 </div>
         
-        </div>
+        </div> */}
        
     <div  className="all_post">
             {girlfriends.map((gf)=>(

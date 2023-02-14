@@ -1,6 +1,7 @@
 import cover from "./cover.png"
 import me from './lalisa.jpg'
-import NavBar from "./NavBar.component";
+import Top from "./top";
+import './App.css'
 import { BrowserRouter, Route,Link } from "react-router-dom";
 // import index from "./Index.component";
 function User(){
@@ -9,7 +10,7 @@ return (
 
     <div>
     <div className="nav_hold">
-    <NavBar />
+    <Top />
     </div>
     
     <div id="profile" className="P_f">
