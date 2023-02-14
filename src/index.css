@@ -458,8 +458,8 @@ section{
   margin-bottom: 45px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-top: 2px solid #ff0000;
-  border-bottom: 2px solid #ff0000;
+  border-top: 2px solid hsl(214, 100%, 59%);
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .friend_list{
   margin-top: 10px;
@@ -517,26 +517,26 @@ section{
 }
 .pi_1{
   border-top-left-radius: 10px;
-  border-top: 2px solid #ff0000;
+  border-top: 2px solid hsl(214, 100%, 59%);
 }
 .pi_2{
-  border-top: 2px solid #ff0000;
+  border-top: 2px solid hsl(214, 100%, 59%);
 }
 .pi_3{
   border-top-right-radius: 10px;
-  border-top: 2px solid #ff0000;
+  border-top: 2px solid hsl(214, 100%, 59%);
 }
 
 .pi_7{
   border-bottom-left-radius: 10px;
-  border-bottom: 2px solid #ff0000;
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .pi_8{
-  border-bottom: 2px solid #ff0000;
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .pi_9{
   border-bottom-right-radius: 10px;
-  border-bottom: 2px solid #ff0000;
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 #su{
   display: none;
@@ -855,8 +855,8 @@ img{
   background: #292929;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-top: 2px solid #ff0000;
-  border-bottom: 2px solid #ff0000;
+  border-top: 2px solid hsl(214, 100%, 59%);
+  border-bottom: 2px solid hsl(214, 100%, 59%);
  }
  .u_highlight_items::-webkit-scrollbar{
   display: none;
@@ -909,8 +909,8 @@ img{
   margin-bottom: 55px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-top: 1px solid #ff0000;
-  border-bottom: 1px solid #ff0000;
+  border-top: 1px solid hsl(214, 100%, 59%);
+  border-bottom: 1px solid hsl(214, 100%, 59%);
 }
 .u_friend_list{
   margin-top: 20px;
@@ -969,26 +969,26 @@ img{
 }
 .u_pi_1{
   border-top-left-radius: 10px;
-  border-top: 1px solid #ff0000;
+  border-top: 1px solid hsl(214, 100%, 59%);
 }
 .u_pi_2{
-  border-top: 1px solid #ff0000;
+  border-top: 1px solid hsl(214, 100%, 59%);
 }
 .u_pi_3{
   border-top-right-radius: 10px;
-  border-top: 1px solid #ff0000;
+  border-top: 1px solid hsl(214, 100%, 59%);
 }
 
 .u_pi_7{
   border-bottom-left-radius: 10px;
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 1px solid hsl(214, 100%, 59%);
 }
 .u_pi_8{
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 1px solid hsl(214, 100%, 59%);
 }
 .u_pi_9{
   border-bottom-right-radius: 10px;
-  border-bottom: 2px solid #ff0000;
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .posts{
   display: flex;
