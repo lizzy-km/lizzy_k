@@ -586,6 +586,7 @@ section{
 
 
 }
+
 .data div{
   /* margin: 0px; */
   /* padding: 10px; */
@@ -765,8 +766,8 @@ img{
  }
  
  .data{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
+  flex-direction: row;
  }
  .u_int{
   padding-top: -15px;
