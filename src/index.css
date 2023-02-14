@@ -77,7 +77,7 @@ section{
   margin: 5px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
-  /* border-top:2px solid #ff0606;*/
+  /* border-top:2px solid hsl(214, 100%, 59%);*/
   border-bottom:2px solid #545454; 
   transition:ease-in .25s;
   /* opacity: 0.7; */
@@ -94,7 +94,7 @@ section{
   box-shadow:4px 4px  rgba(255, 22, 22, 0.5),
   8px 8px  rgba(255, 22, 22, 0.4),
   12px 12px  rgba(255, 22, 22, 0.3),
-  16px 16px 30px rgb(255, 22, 22);
+  16px 16px 30px hsl(214, 100%, 59%);
   min-height: 80px;
   max-height: 80px;
   width: 300px;
@@ -155,7 +155,7 @@ section{
     height: 48px;
     margin-top: 5px;
     margin-left: 5px;
-    border: 2px dashed #ff0606;
+    border: 2px dashed hsl(214, 100%, 59%);
     transition: .25s;
   }
   .P_2>.card_1>.p-d{
@@ -180,7 +180,7 @@ section{
     border-radius: 50%;
     margin-top: -100px;
     margin-left: 20px;
-    border:4px solid rgb(255, 22, 22)
+    border:4px solid hsl(214, 100%, 59%)
     ;
     outline: 4px solid #333333;
   
@@ -188,7 +188,7 @@ section{
   
   }
   .P_2>.card_1>#pi:hover{
-    border:5px dashed rgb(255, 22, 22)
+    border:5px dashed hsl(214, 100%, 59%)
     ;
   }
   .P_2>.card_1>.u_n{
@@ -206,16 +206,16 @@ section{
     padding-left: 20px;
     padding-right: 20px;
     height: 40px;
-    border-top: 2px solid rgb(255, 22, 22);
-    border-bottom: 2px solid rgb(255, 22, 22);
+    border-top: 2px solid hsl(214, 100%, 59%);
+    border-bottom: 2px solid hsl(214, 100%, 59%);
   }
   .P_2>.card_1>.p-d>.b-d{
     padding-left: 30px;
     padding-right: 30px;
     width: 100px;
     height: 40px;
-    border-top: 2px solid rgb(255, 22, 22);
-    border-bottom: 2px solid rgb(255, 22, 22);
+    border-top: 2px solid hsl(214, 100%, 59%);
+    border-bottom: 2px solid hsl(214, 100%, 59%);
   }
   
   .P_2>.card_1>.p-d{
@@ -319,7 +319,7 @@ section{
     height: 48px;
     margin-top: 5px;
     margin-left: 5px;
-    border: 2px dashed #ff0606;
+    border: 2px dashed hsl(214, 100%, 59%);
     transition: .25s;
   } 
   .P_2>.card_1{
@@ -403,8 +403,8 @@ section{
 .bt{
   border-bottom-left-radius: 20px  ;
   border-top-right-radius: 20px  ;
-  border-bottom: 1px solid rgb(255, 22, 22);
-  border-top: 1px solid rgb(255, 22, 22);
+  border-bottom: 1px solid hsl(214, 100%, 59%);
+  border-top: 1px solid hsl(214, 100%, 59%);
   margin-top: 10px;
 }
 .b-d{
@@ -625,7 +625,7 @@ section{
   height: 48px;
   margin-top: 5px;
   margin-left: 5px;
-  border: 2px dashed #ff0606;
+  border: 2px dashed hsl(214, 100%, 59%);
   transition: .25s;
 }
 .pf>.card_1>.p-d{
@@ -650,7 +650,7 @@ section{
   border-radius: 50%;
   margin-top: -60px;
   margin-left: 50px;
-  border:4px solid rgb(255, 22, 22)
+  border:4px solid hsl(214, 100%, 59%)
   ;
   outline: 4px solid #333333;
 
@@ -658,7 +658,7 @@ section{
 
 }
 .pf>.card_1>#pi:hover{
-  border:5px dashed rgb(255, 22, 22)
+  border:5px dashed hsl(214, 100%, 59%)
   ;
 }
 .pf>.card_1>.u_n{
@@ -676,16 +676,16 @@ section{
   padding-left: 20px;
   padding-right: 20px;
   height: 40px;
-  border-top: 2px solid rgb(255, 22, 22);
-  border-bottom: 2px solid rgb(255, 22, 22);
+  border-top: 2px solid hsl(214, 100%, 59%);
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .pf>.card_1>.p-d>.b-d{
   padding-left: 30px;
   padding-right: 30px;
   width: 140px;
   height: 40px;
-  border-top: 2px solid rgb(255, 22, 22);
-  border-bottom: 2px solid rgb(255, 22, 22);
+  border-top: 2px solid hsl(214, 100%, 59%);
+  border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 
 .pf>.card_1>.p-d{
