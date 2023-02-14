@@ -761,9 +761,7 @@ img{
  justify-content: center;
   row-gap: 0px;
  }
- .detail .posts{
-  margin-top: -358px;
- }
+ 
  
  .data{
   display: flex;
@@ -1008,8 +1006,19 @@ img{
   justify-content: center;
 }
 .posts .all_post{
-  height: 900px;
+  /* padding-top: 80px; */
+  max-height: 900px;
+  min-height: 0px;
   overflow-y: auto;
+}
+.detail .posts{
+  margin-top: -358px !important;
+ }
+.posts .all_post_data{
+  margin-top: 60px;
+}
+.all_post::-webkit-scrollbar{
+  display: none;
 }
 .u_posts{
   display: flex; 
