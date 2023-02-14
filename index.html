@@ -9,5 +9,91 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+  <script>
+    
+    document.querySelectorAll('div').forEach(occurence => {
+     occurence.addEventListener('click', (e) => {
+            let elementId = e.target.id;
+            let elementTag = e.target.parentNode
+          
+           
+            if(elementId =='pi'|| elementId=='name' ) {
+  
+
+  //Choose Place Want to clone
+  const div = document.getElementById("dp").children[1];
+  // const div1 =div.children[1];
+  const clone = div.cloneNode(false);
+
+  document.getElementById("P2").appendChild(clone);
+
+  // element.replaceChild(newNode, element.childNodes[1]);
+  const pNode =elementTag.parentNode.children[0];
+  const Pnode = elementTag.parentNode;
+
+  div.replaceChild(pNode,div.childNodes[1]);
+  
+
+  const copy = div.children[1];
+  const Cclone =copy.cloneNode(true);
+  Pnode.appendChild(Cclone);
+}
+
+           
+
+            if (elementId=='csignup') {
+              const signin =document.getElementById('signin');
+              const si =document.getElementById('si');
+
+              const Si =document.getElementById('si').children[1];
+
+              const signup =document.getElementById('signup');
+              const su =document.getElementById('su');
+
+              const Su =document.getElementById('su').children[1];
+              
+
+              su.appendChild(signin,su);
+              si.appendChild(signup,si);
+
+              
+
+            }
+
+            if (elementId=='csignin') {
+              const signin =document.getElementById('signin');
+              const si =document.getElementById('si').children[0];
+
+              const signup =document.getElementById('signup');
+              const su =document.getElementById('su').children[0];
+
+              su.appendChild(signup,su);
+              si.appendChild(signin,si);
+              
+            }
+
+            // if (elementId=='top') {
+
+            //   const user =document.getElementById('user').children[0]
+            //   const b1 =document.getElementById('b1').children[0]
+
+            //   b1.replaceChild(user,b1.childNodes[0]);
+
+
+            // }
+
+            else{
+                return
+            }
+
+           
+
+            
+                  
+                        
+                      });
+                    });
+
+  </script>
   </body>
 </html>
