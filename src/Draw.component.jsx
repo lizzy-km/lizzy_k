@@ -3,6 +3,7 @@ import rose from './Rose`.jpg'
 import jisoo from "./jisoo.jpg"
 import lalisa from "./lalisa.jpg"
 import jennie from './jennie.png'
+import { BrowserRouter, Route,Link } from "react-router-dom";
 import './App.css';
 // import { BrowserRouter, Route } from "react-router-dom";
 // import index from "./Index.component";
@@ -133,7 +134,7 @@ return (
                 // onClick="reply_click(this.id)"
                 className="C_3 card_1">
                 <img  className="c-img" src={cover} alt=""></img>
-                <img id="pi" className="img " src={gf.pf} alt="Jisoo"></img>
+                <img id="pi" className="img p_hover " src={gf.pf} alt="Jisoo"></img>
                 <p id="name" className=" u_n">
                        {gf.username}
                     </p>
@@ -147,89 +148,133 @@ return (
                     
                 </div>
                 <div className="detail">
-                    <div className="intro">
-                        
-                   
-                    <div className="bio">
-                        <b className="int">Intro</b>
+                <div className="l_b">
+
+
+                <div className="u_intro">
+
+
+    <div className="u_bio">
+        <b className="u_int">Intro</b>
+        <div className="u_edit_bio">
+            <b className="u_eb"> Edit bio</b>
+        </div>
+    </div>
+
+    <div className="u_about">
+
+        <div>
+            Relationship <span> Single.</span>
+
+        </div>
+        <div>
+            Followed by <Link type='submit' id="flop" to='/'>4 people</Link>
+        </div>
+        <div className="u_edit_detail">
+            <b className="u_ed"> Edit detail</b>
+        </div>
+    </div><br></br>
+    <div className="u_highlight">
+        <div className="u_highlight_items">
+
+
+            <div className="u_highlight_item">
+
+            </div>
+            <div className="u_highlight_item">
+
+            </div>
+            <div className="u_highlight_item">
+
+            </div>
+            <div className="u_highlight_item">
+
+            </div>
+            <div className="u_highlight_item">
+
+            </div>
+            <div className="u_highlight_item">
+
+            </div>
+            <div className="u_highlight_item">
+
+            </div>
+
+        </div>
+        <div className="u_edit_highlight">
+            <b className="u_eh"> Edit highlight</b>
+        </div>
+    </div>
                     </div>
-                    <div className="about">
-                        
-                        <div>
-                            Relationship <span> Single.</span>
-                           
-                        </div>
-                        <div>
-                        Followed by <b>100,000,400 people</b>
-                        </div>
-                    </div><br></br>
-                    <div className="highlight">
-                       <div className="highlight_items">
-                        
-                       
-                        <div className="highlight_item">
-                            
-                        </div>
-                        <div className="highlight_item">
-                            
-                        </div>
-                        <div className="highlight_item">
-                            
-                        </div>
-                        <div className="highlight_item">
-                            
-                        </div>
-                        <div className="highlight_item">
-                            
-                        </div>
-                        <div className="highlight_item">
-                            
-                        </div>
-                        <div className="highlight_item">
-                            
-                        </div>
-                        </div>
+                <div className="u_photos">
+    <b className="u_ph_n">Photos</b> <a className="u_sa_p">See all photos</a>
+    <div className="u_photo_album">
+        <div className="u_photo_item u_pi_1">
+
+        </div>
+        <div className="u_photo_item u_pi_2">
+
+        </div>
+        <div className="u_photo_item u_pi_3">
+
+        </div>
+        <div className="u_photo_item">
+
+        </div>
+        <div className="u_photo_item">
+
+        </div>
+        <div className="u_photo_item">
+
+        </div>
+        <div className="u_photo_item u_pi_7">
+
+        </div>
+        <div className="u_photo_item u_pi_8">
+
+        </div>
+        <div className="u_photo_item  u_pi_9">
+
+        </div>
+    </div>
                     </div>
+                <div className="u_friends">
+    <b className="u_fr_n">Friends</b><a className="u_sa_p">See all friends</a>
+    <div className="u_friend_list ">
+
+
+        <div className="u_firend_list ">
+
+        </div>
+        <div className="u_firend_list ">
+
+        </div>
+        <div className="u_firend_list">
+
+        </div>
+        <div className="u_firend_list">
+
+        </div>
+        <div className="u_firend_list">
+
+        </div>
+        <div className="u_firend_list">
+
+        </div>
+        <div className="u_firend_list ">
+
+        </div>
+        <div className="u_firend_list ">
+
+        </div>
+        <div className="u_firend_list ">
+
+        </div>
+
+    </div>
                     </div>
-                    <div className="photos">
-                        Photos
-                    </div>
-                    <div className="friends">
-                        <b className="fr_n">Friends</b>
-                        <div className="friend_list">
-                            
-                       
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        <div className="firend_list">
-                            
-                        </div>
-                        
-                        </div>
-                    </div>
-                    <div className="posts">
+                  </div>
+                <div className="posts">
                     <div  className=" mf_up">
             <div  className="pe_h">
                 <div  className=" mf_pe">
@@ -259,10 +304,10 @@ return (
                 </div>
             </div>
 
-        </div> 
+                        </div> 
 
        
-    <div  className="all_post">
+                <div  className="all_post">
             
                 <div className="all_post_data">
 
@@ -330,14 +375,14 @@ return (
                     
                 </div>
                 
-            </div>
+                    </div>
             
            
         
        
 
     </div>
-                    </div>
+                  </div>
                    
     
                         

@@ -57,7 +57,7 @@ section{
 }
 .P_1{
   width: 330px;
-  max-height: 400px;
+  max-height: 550px;
   display: grid;
   /* padding: 10px; */
   grid-auto-flow: row;
@@ -230,13 +230,14 @@ section{
   
   }
   .P_2>.card_1>.detail{
-    display: unset;
-    /* position:absolute ; */
-    border-top: 2px solid #8480806d;
-    width: 920px;
-    height: 300px;
-    margin-left: 10px;
-    margin-top: 20px;
+    height: auto;
+    overflow-y: none;
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+    row-gap: 0px;
+    
     background-color: transparent;
   
   
@@ -276,7 +277,7 @@ section{
    }
    .intro{
     text-align: left;
-    background-color: #232323;
+    background-color: #222222;
     width: 700px;
     margin-left: 130px;
     border-radius: 10px;
@@ -305,14 +306,14 @@ section{
    .about>div{
     margin-bottom: 15px;
    }
-   span{
+   /* span{
     opacity: 0.7;
     
    }
    .span{
     font-size: 15px;
     
-   }
+   } */
    .card_1>.img{
     border-radius: 50%;
     width: 50px;
@@ -380,7 +381,7 @@ section{
 
 .P_1{
  width: 330px;
- max-height: 400px;
+ max-height: 500px;
  display: grid;
  /* padding: 10px; */
  grid-auto-flow: row;
@@ -435,7 +436,7 @@ section{
   margin-top: 20px;
   margin-left: 130px;
   width: 700px;
-  background-color: #232323;
+  background-color: #222222;
   /* display: grid; */
   text-align: left;
   height: 810px;
@@ -452,7 +453,7 @@ section{
   
   width: 210px;
   height: 210px;
-  background-color: #323232;
+  background-color: #222222;
   margin-right: 8px;
   /* column-gap: 15px; */
   margin-bottom: 45px;
@@ -474,7 +475,7 @@ section{
 .photos{
   margin-top: 20px;
   margin-left: 130px;
-  background-color: #232323;
+  background-color: #222222;
   width: 700px;
   height: 700px;
   border-radius: 10px;
@@ -493,7 +494,7 @@ section{
   border-bottom-right-radius: 10px;
   margin-left: 31px;
   width: 650px;
-  /* border: 10px solid #232323 ; */
+  /* border: 10px solid #222222 ; */
   height: 640px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -570,7 +571,7 @@ section{
   align-items: center;
 }
 .pf{
-  background-color: #323232;
+  background-color: #222222;
   width:1260.5px;
   height: auto;
  }
@@ -751,9 +752,16 @@ img{
  }
  /* User Profile */
  .P_f>.detail{
-  display: grid;
-  grid-template-rows: repeat(1,1fr);
-  row-gap: 10px;
+  height: auto;
+  overflow-y: none;
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+  row-gap: 0px;
+ }
+ .detail .posts{
+  margin-top: -358px;
  }
  
  .data{
@@ -766,7 +774,7 @@ img{
  .u_intro{
   text-align: left;
   padding-top: -10px;
-  background-color: #323232;
+  background-color: #222222;
   width: 360px;
   margin-left: 10px;
   border-radius: 10px;
@@ -793,7 +801,7 @@ img{
   height: 40px;
   margin-top: 10px;
   padding-top: 6px;
-  background-color: #525252;
+  background-color: #333333;
   /* border: 2px solid; */
   border-radius: 10px;
   cursor: pointer;
@@ -816,7 +824,7 @@ img{
   height: 40px;
   margin-top: 10px;
   padding-top: 6px;
-  background-color: #525252;
+  background-color: #333333;
   /* border: 2px solid; */
   border-radius: 10px;
   cursor: pointer;
@@ -824,9 +832,9 @@ img{
  .u_about>div{
   margin-bottom: 5px;
  }
- span{
+ /* span{
   opacity: 0.7;
- }
+ } */
  .u_highlight{
   /* text-align: left; */
   
@@ -871,7 +879,7 @@ img{
   height: 40px;
   margin-top: 10px;
   padding-top: 6px;
-  background-color: #525252;
+  background-color: #333333;
   /* border: 2px solid; */
   border-radius: 10px;
   cursor: pointer;
@@ -945,7 +953,7 @@ img{
   margin-left: 13px;
   margin-top: 25px;
   width: 340px;
-  /* border: 10px solid #232323 ; */
+  /* border: 10px solid #222222 ; */
   height: 340px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -991,8 +999,20 @@ img{
   border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .posts{
+  height: auto;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.posts .all_post{
+  height: 900px;
+  overflow-y: auto;
+}
+.u_posts{
+  display: flex; 
+ flex-direction: column;
   align-items: center;
   justify-content: center;
 }
