@@ -1495,8 +1495,19 @@ input:active{
   padding: 0;
 
 }
+.r_to{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  text-align: center;
+}
 .ct_h{
-  max-height: 540px;
+  max-height: 350px;
+  /* overflow: scroll; */
+}
+.ct_hc{
+  max-height: 280px;
   overflow: scroll;
 }
 .ct_h::-webkit-scrollbar{

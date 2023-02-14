@@ -115,12 +115,19 @@ const Right = () => {
     return(
 
 <div  class="right_feed">
+      <div className="r_to">
+        <div>
+          No data aviliable!
+        </div>
+      </div>
         <div className="ct_h">
+         
             <div className="ct_t">
                 <p>Contacts</p>
                 <p>. . .</p>
             </div>
-            {girlfriends.map((gf)=>(
+            <div className="ct_hc">
+          {girlfriends.map((gf)=>(
                 <div className="rf_usr">
                 <div className="rf_usr_p ">
                     <img className="pf_hover" src={gf.pf} alt=""/>
@@ -130,6 +137,8 @@ const Right = () => {
                 </div>
             </div>
             ))}
+          </div>
+           
             
         </div>
 </div>
