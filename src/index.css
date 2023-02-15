@@ -1646,7 +1646,7 @@ input:active{
     margin-left:10px;
   }
   .nav_r{
-    margin-right:10px;
+    margin-right:4px;
   }
 
   .nav_m{
@@ -1816,17 +1816,16 @@ input:active{
 }
 .pe_h{
   width: 380px;
-  height: 122.667px;
+  height: auto;
   border-radius: 8px;
-  padding: 8px;
+  padding: 2px;
   margin: 8px;
   background-color: #222222;
 }
 .mf_pe{
   display: flex;
   flex-direction: row;
-  
-  margin: 8px;
+  margin: 8px 4px ;
  
 }
 .mf_pe a{
@@ -1853,7 +1852,7 @@ input:active{
   height: 40px;
   border-radius: 50%;
   background-color: #333333;
-  padding: 8px;
+  padding: 4px;
   margin: 0px;
   cursor: pointer;
 }
@@ -1892,8 +1891,8 @@ input:active{
   width: 380px;
   height: auto;
   border-radius: 8px;
-  padding: 8px;
-  margin: 8px;
+  padding: 2px;
+  margin: 4px;
 }
 .all_p_owner{
   display: flex;
