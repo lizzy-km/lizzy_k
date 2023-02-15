@@ -1629,8 +1629,9 @@ input:active{
   }
   .top{
     width:412px;
+    min-width: 412px;
     height: 56px;
-    width: 100%;
+    /* width: 100%; */
     background-color: #222222;
    text-align: center;
    display: flex;
