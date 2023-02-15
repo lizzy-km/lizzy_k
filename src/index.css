@@ -848,8 +848,8 @@ img{
  }
  .u_highlight_items{
   margin-top: 5px;
-  display: grid;
-  grid-template-columns: repeat(8,1fr);
+  display: flex;
+  flex-direction: row;
   overflow-x: auto;
   margin-left: 20px;
   width: 330px;
@@ -890,7 +890,7 @@ img{
   background-color: #343434;
   /* display: grid; */
   text-align: left;
-  height: 500px;
+  height: 400px;
   /* border: 2px solid #4e4e4e; */
   border-radius: 10px;
   color: #ffffff;
@@ -906,12 +906,34 @@ img{
   margin-left: 20px;
 }
 .u_firend_list{
+  width: 101.990px;
+  height: 130px;
+  /* background-color: #5b5b5b; */
+  margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  /* column-gap: 15px; */
+  /* margin-bottom: 55px; */
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 1px solid hsl(214, 100%, 59%);
+  border-bottom: 1px solid hsl(214, 100%, 59%);
+}
+.u_firend_list p{
+  margin-top: -53px;
+  font-size: 14px;
+  text-align: center;
+}
+.u_firend_list img{
   
   width: 101.990px;
   height: 101.990px;
   background-color: #5b5b5b;
   margin-right: 2px;
-  
+  object-fit: cover;
   /* column-gap: 15px; */
   margin-bottom: 55px;
   border-bottom-left-radius: 10px;
@@ -924,6 +946,8 @@ img{
   margin-left: 10px;
   /* margin-left: 0px; */
   width: 340px;
+  max-height: 350px;
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
@@ -953,7 +977,8 @@ img{
   margin-top: 25px;
   width: 340px;
   /* border: 10px solid #222222 ; */
-  height: 340px;
+  max-height: 340px;
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
@@ -962,8 +987,16 @@ img{
   width: 106.667px;
   height: 106.667px;
   background-color: #2e2e2e;
+  border-radius: 8px;
   margin-bottom: 0px;
+  margin: 3px;
   
+}
+.u_photo_item img{
+  border-radius: 8px;
+  width: 106.667px;
+  height: 106.667px;
+  object-fit: cover;
 }
 .u_sa_p{
   color:rgb(13, 13, 234) !important;

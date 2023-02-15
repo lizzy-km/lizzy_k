@@ -154,126 +154,88 @@ return (
                 <div className="u_intro">
 
 
-    <div className="u_bio">
-        <b className="u_int">Intro</b>
-        <div className="u_edit_bio">
-            <b className="u_eb"> Edit bio</b>
-        </div>
-    </div>
-
-    <div className="u_about">
-
-        <div>
-            Relationship <span> Single.</span>
-
-        </div>
-        <div>
-            Followed by <Link type='submit' id="flop" to='/'>4 people</Link>
-        </div>
-        <div className="u_edit_detail">
-            <b className="u_ed"> Edit detail</b>
-        </div>
-    </div><br></br>
-    <div className="u_highlight">
-        <div className="u_highlight_items">
-
-
-            <div className="u_highlight_item">
-
-            </div>
-            <div className="u_highlight_item">
-
-            </div>
-            <div className="u_highlight_item">
-
-            </div>
-            <div className="u_highlight_item">
-
-            </div>
-            <div className="u_highlight_item">
-
-            </div>
-            <div className="u_highlight_item">
-
-            </div>
-            <div className="u_highlight_item">
-
-            </div>
-
-        </div>
-        <div className="u_edit_highlight">
-            <b className="u_eh"> Edit highlight</b>
-        </div>
-    </div>
+                    <div className="u_bio">
+                        <b className="u_int">Intro</b>
+                        <div className="u_edit_bio">
+                            <b className="u_eb"> Edit bio</b>
+                        </div>
                     </div>
+
+                    <div className="u_about">
+
+                        <div>
+                            Relationship <span> Single.</span>
+
+                        </div>
+                        <div>
+                            Followed by <Link type='submit' id="flop" to='/'>4 people</Link>
+                        </div>
+                        <div className="u_edit_detail">
+                            <b className="u_ed"> Edit detail</b>
+                        </div>
+                    </div><br></br>
+                    <div className="u_highlight">
+                        <div className="u_highlight_items">
+
+                        {girlfriends.map((gf)=>(
+                        <div  className="mf_highlight_item">
+                            <div className="hl_c">
+                           
+                                <div className="hl_m ">
+                               
+                                    <img className="hl_mp br_1 " src={gf.image} alt=""/>
+                                </div>
+                                {/* <div className="hl_n">
+                                <img className="h_l_p p_hover" src={gf.pf} alt=""/>
+                                    <p className="hln_t">{gf.username}</p>
+                                </div> */}
+                                
+                                
+                                
+                                
+
+                            </div>
+                        </div>
+                    ))}
+                            
+                           
+
+                        </div>
+                        <div className="u_edit_highlight">
+                            <b className="u_eh"> Edit highlight</b>
+                        </div>
+                    </div>
+                </div>
                 <div className="u_photos">
-    <b className="u_ph_n">Photos</b> <a className="u_sa_p">See all photos</a>
-    <div className="u_photo_album">
-        <div className="u_photo_item u_pi_1">
-
-        </div>
-        <div className="u_photo_item u_pi_2">
-
-        </div>
-        <div className="u_photo_item u_pi_3">
-
-        </div>
-        <div className="u_photo_item">
-
-        </div>
-        <div className="u_photo_item">
-
-        </div>
-        <div className="u_photo_item">
-
-        </div>
-        <div className="u_photo_item u_pi_7">
-
-        </div>
-        <div className="u_photo_item u_pi_8">
-
-        </div>
-        <div className="u_photo_item  u_pi_9">
-
-        </div>
-    </div>
+                    <b className="u_ph_n">Photos</b> <a className="u_sa_p">See all photos</a>
+                    <div className="u_photo_album">
+                        {girlfriends.map((gf)=>(
+                            <div className="u_photo_item u_pi_1">
+                                <img src={gf.image} alt=""/>
+                            </div>
+                        ))}
+                        
+                       
                     </div>
+                </div>
                 <div className="u_friends">
-    <b className="u_fr_n">Friends</b><a className="u_sa_p">See all friends</a>
-    <div className="u_friend_list ">
+                    <b className="u_fr_n">Friends</b><a className="u_sa_p">See all friends</a>
+                    <div className="u_friend_list ">
 
+                    {girlfriends.map((gf)=>(
+                            <div className="u_firend_list u_pi_1">
+                                <img src={gf.image} alt=""/>
+                                <p>{gf.username} </p>
+                            </div>
+                        ))} 
+                        {/* <div className="u_firend_list ">
 
-        <div className="u_firend_list ">
+                        </div> */}
+                       
 
-        </div>
-        <div className="u_firend_list ">
-
-        </div>
-        <div className="u_firend_list">
-
-        </div>
-        <div className="u_firend_list">
-
-        </div>
-        <div className="u_firend_list">
-
-        </div>
-        <div className="u_firend_list">
-
-        </div>
-        <div className="u_firend_list ">
-
-        </div>
-        <div className="u_firend_list ">
-
-        </div>
-        <div className="u_firend_list ">
-
-        </div>
-
-    </div>
                     </div>
-                  </div>
+                </div>
+            </div>
                 <div className="posts">
                     <div  className=" mf_up">
             <div  className="pe_h">

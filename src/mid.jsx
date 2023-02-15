@@ -196,12 +196,13 @@ const Mid = () => {
     <div  className=" mf_up">
             <div  className="pe_h">
                 <div  className=" mf_pe">
+                  <Link to='/User'>
                     <a href="">
                         <img   className="pe_m_p " 
                   
                     src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"
                      alt=""/> 
-                    </a>
+                    </a></Link>
                  
                   <div  id="create" className="pe_txt" onClick={create()} >
                         <span id="create">What's on your mind, Kaung?</span>
