@@ -1180,6 +1180,7 @@ input:active{
 }
 .hd_p{
   max-height: 149.406px;
+  border-radius: 8px 8px 0px 0px;
 }
 .cr_s{
   z-index: 99;
