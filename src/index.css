@@ -2037,15 +2037,20 @@ input:active{
 
 }
 .pf_hold{
+  max-height: 1280px;
   margin-top: -120px;
    overflow-y: auto;
  }
  .pf_hold::-webkit-scrollbar{
    display: none;
  }
+ #profile{
+  max-width: 412px;
+  max-height: 1280px;
+ }
  .P_f{
   max-width: 412px;
-  height: auto;
+  max-height: 1280px;
    color: white;
    display: flex;
    overflow-y: auto;
