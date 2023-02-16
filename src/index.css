@@ -1,7 +1,7 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 *{
-  transition: .2s;
+  transition: .25s;
   text-decoration: none;
 }
 span{
@@ -771,6 +771,7 @@ img{
   padding-top: -15px;
  }
  .u_intro{
+  height: auto;
   text-align: left;
   padding-top: -10px;
   background-color: #222222;
@@ -2022,6 +2023,136 @@ input:active{
   margin-bottom: -20px;
   padding: 8px;
   cursor: pointer;
+}
+
+.data{
+  /* overflow-y: hidden; */
+  margin: 10px;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+
+
+}
+.pf_hold{
+  margin-top: -120px;
+   overflow-y: auto;
+ }
+ .pf_hold::-webkit-scrollbar{
+   display: none;
+ }
+ .P_f{
+  max-width: 412px;
+  height: auto;
+   color: white;
+   display: flex;
+   overflow-y: auto;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .l_b{
+  min-width: 412px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+ }
+ .u_intro{
+  margin-left: 0px;
+  min-width: 380px;
+  border-radius: 8px;
+  background-color: #222222;
+ }
+ .u_photos{
+  margin-left: 0px;
+  min-width: 380px;
+  border-radius: 8px;
+  background-color: #222222;
+ }
+ .u_friends{
+  margin-left: 0px;
+  min-width: 380px;
+  border-radius: 8px;
+  background-color: #222222;
+ }
+ .u_posts{
+  /* margin: 10px; */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+ }
+ .mf_up{
+  width: 412px;
+  margin: 0;
+ }
+ .all_post{
+  margin: 0;
+ }
+ .pf{
+  max-width: 412px;
+  margin: 0;
+ }
+ .C_2{
+  margin: 0;
+  max-width: 412px;
+ }
+ .c-img{
+  margin-top: -20px;
+  margin-left: 0;
+  max-width: 412px;
+  object-fit: contain;
+ }
+ .pf .card_1{
+  padding-top: -20px;
+  /* height: 700px; */
+  margin: 0;
+  max-width: 412px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .pf .card_1 #pi{
+  margin-top: -190px;
+  max-width: 164px;
+  max-height: 164px;
+  margin-left: 0;
+ }
+ 
+
+
+.pf>.card_1>.u_n {
+    font-weight: bolder;
+    margin-top: 0px;
+    width: auto;
+    /* display: inline-block; */
+    font-size: 30px;
+    margin-left: 0px;
+    /* text-align: center; */
+}
+.pf>.card_1>.p-d {
+  /* float: inherit; */
+  /* display: grid; */
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-bottom: 10px;
+  position: relative;
+  /* padding: 20px; */
+  text-align: center;
+}
+.post_data{
+  padding: 6px;
 }
 
  
