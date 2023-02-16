@@ -2058,6 +2058,9 @@ input:active{
    align-items: center;
    justify-content: center;
  }
+ .newfeed{
+  max-height: 1280px;
+ }
 
  .l_b{
   min-width: 412px;
@@ -2094,11 +2097,11 @@ input:active{
   justify-content: center;
   align-items: center;
  }
- .mf_up{
+ .data .u_post .mf_up{
   width: 412px;
   margin: 0;
  }
- .all_post{
+ .data .u_post .all_post{
   margin: 0;
  }
  .pf{
