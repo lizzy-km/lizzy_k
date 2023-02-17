@@ -5,8 +5,9 @@
   text-decoration: none;
 }
 *::-webkit-scrollbar{
-  display: none;
+  display:none !important;
 }
+
 span{
   text-decoration: none;
   outline-style: none;
@@ -1090,7 +1091,9 @@ img{
   position: fixed;
   z-index: 999999;
   height: 56px;
-  width: 100%;
+  width: 1280px;
+  max-width: 1290px;
+  min-width:300px;
   background-color: #222222;
   border-bottom: .5px solid rgba(68, 68, 68, 0.666);
  text-align: center;
@@ -1679,13 +1682,13 @@ input:active{
 /* __________________________________Mobile View_______________________________________ */
 @media only screen and (max-width:600px){
   main{
-    max-width:412px;
+    /* max-width:412px; */
     display:flex;
     flex-direction:column;
     align-items:center;
   }
   section{
-    max-width:412px;
+    /* max-width:412px; */
   }
   .left_feed{
     display:none;
@@ -1697,11 +1700,23 @@ input:active{
     display:none;
   }
   main .top{
-    margin-left: -210px;
-    width:412px;
+    margin-left: -200px;
+    /* width:412px; */
     min-width: 410px;
     height: 56px;
-    /* width: 100%; */
+    width: 100%;
+    background-color: #222222;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  .top{
+    margin-left: 00px;
+    /* width:412px; */
+    min-width: 410px;
+    height: 56px;
+    width: 100%;
     background-color: #222222;
    text-align: center;
    display: flex;
@@ -1733,8 +1748,8 @@ input:active{
   
   overflow-y: scroll;
   overflow-x: hidden;
-  min-height: 600px;
-  max-height: 700px;
+  min-height: 1280px;
+  max-height: 1280px;
 }
 .mid_feed{
   min-width: 380px;
