@@ -1546,7 +1546,7 @@ input:active{
   width: 590px;
 }
 .left_feed{
-  padding-top: 40px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content:left;
@@ -1583,7 +1583,7 @@ input:active{
   font-weight: 650;
 }
 .right_feed{
-  padding-top: 40px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content:left;
