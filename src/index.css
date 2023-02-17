@@ -1751,8 +1751,8 @@ input:active{
   
   overflow-y: scroll;
   overflow-x: hidden;
-  min-height: 1280px;
-  max-height: 1280px;
+  min-height: 800px;
+  max-height: 700px;
 }
 .mid_feed{
   min-width: 380px;
