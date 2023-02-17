@@ -1199,6 +1199,7 @@ input:active{
 
 
 .newfeed{
+  padding-top: 40px;
   flex-grow: 1;
   min-width: 598px;
   display: flex;
@@ -1214,13 +1215,15 @@ input:active{
   max-height: 600px;
 }
 .mid_feed{
+  padding-top: 40px;
   min-width: 598px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   /* background-color: #020202; */
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
   /* margin: 8px; */
 }
 .newfeed::-webkit-scrollbar{
@@ -2155,13 +2158,13 @@ body{
   max-width: 412px;
  }
  .c-img{
-  margin-top: -20px;
+  margin-top: 40px;
   margin-left: 0;
   max-width: 412px;
   object-fit: contain;
  }
  .pf .card_1{
-  padding-top: 20px;
+  padding-top: 40px;
   /* height: 700px; */
   margin: 0;
   max-width: 412px;
