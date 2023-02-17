@@ -1390,7 +1390,7 @@ input:active{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid rgba(179, 179, 179, 0.587);
+  border-top: 1px solid rgba(96, 96, 96, 0.587);
 }
 .mf_md div{
   margin: 8px;
@@ -1537,7 +1537,7 @@ input:active{
   flex-direction: row;
   justify-content: space-between;
   margin: 8px;
-  border-top: 1px solid rgba(157, 157, 157, 0.729);
+  border-top: 1px solid rgba(85, 85, 85, 0.729);
 }
 .p_r_data div{
   margin-bottom: -20px;
@@ -1731,10 +1731,10 @@ input:active{
     
   }
   .nav_l{
-    margin-left:10px;
+    margin-left:8px;
   }
   .nav_r{
-    margin-right:4px;
+    padding-right:4px;
   }
 
   .nav_m{
@@ -1769,7 +1769,7 @@ input:active{
 .mf_highlight{
   max-width: 380px;
   min-width:380px;
-  height:172.44px;
+ height:210.44px;
   /* overflow: auto; */
   
   margin-left:-50px;
@@ -1925,7 +1925,7 @@ input:active{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid rgba(179, 179, 179, 0.587);
+  border-top: 1px solid rgba(85, 85, 85, 0.729);
 }
 .mf_md div{
   margin: 8px;
@@ -2081,7 +2081,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   margin: 8px;
-  border-top: 1px solid rgba(157, 157, 157, 0.729);
+  border-top: 1px solid rgba(85, 85, 85, 0.729);
 }
 .p_r_data div{
   margin-bottom: -20px;
@@ -2231,4 +2231,3 @@ body{
 
  
 }
-
