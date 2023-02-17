@@ -2059,7 +2059,7 @@ input:active{
 
 }
 .pf_hold{
-  max-height: 1280px;
+  max-height: auto;
   margin-top: -120px;
    overflow-y: auto;
    overflow-x: hidden;
@@ -2069,11 +2069,11 @@ input:active{
  }
  #profile{
   max-width: 412px;
-  max-height: 1280px;
+  max-height: auto;
  }
  .P_f{
   max-width: 412px;
-  max-height: 1280px;
+  max-height: auto;
    color: white;
    display: flex;
    overflow-y: auto;
@@ -2083,7 +2083,7 @@ input:active{
    justify-content: center;
  }
  .newfeed{
-  max-height: 1280px;
+  max-height: auto;
  }
 
  .l_b{
