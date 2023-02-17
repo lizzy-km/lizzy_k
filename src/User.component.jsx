@@ -112,6 +112,15 @@ function User(){
             image:
               "https://i.pinimg.com/originals/89/dd/1b/89dd1bc8ff27398d8cea085fece88360.jpg",
           },
+          {
+            id: 12,
+            username: "Ning Ning",
+            description:
+              "Detail",
+              pf:"https://i.pinimg.com/474x/bd/f2/eb/bdf2eb5a96a8c29683972ef2116506fc.jpg",
+            image:
+              "https://i.pinimg.com/originals/89/dd/1b/89dd1bc8ff27398d8cea085fece88360.jpg",
+          },
        
        
       ];
