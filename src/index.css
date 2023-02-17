@@ -2161,7 +2161,7 @@ body{
   object-fit: contain;
  }
  .pf .card_1{
-  padding-top: -20px;
+  padding-top: 20px;
   /* height: 700px; */
   margin: 0;
   max-width: 412px;
