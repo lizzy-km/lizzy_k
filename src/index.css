@@ -562,6 +562,9 @@ section{
   overflow-x: hidden;
   padding-bottom: 200px;
 }
+.height{
+  min-height: 200px;
+}
 .pf_hold::-webkit-scrollbar{
   display: none;
 }
