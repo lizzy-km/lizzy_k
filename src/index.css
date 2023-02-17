@@ -1545,12 +1545,13 @@ input:active{
   width: 590px;
 }
 .left_feed{
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content:left;
   width: 280px;
   margin: 8px;
-  padding: 0;
+  /* padding: 0; */
   /* background-color: #222222; */
 }
 .lf_me{
@@ -1581,13 +1582,14 @@ input:active{
   font-weight: 650;
 }
 .right_feed{
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content:left;
   text-align: center;
   width: 280px;
   margin: 8px;
-  padding: 0;
+  /* padding: 0; */
 
 }
 .r_to{
