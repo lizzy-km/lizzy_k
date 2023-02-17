@@ -1207,7 +1207,7 @@ input:active{
   /* margin: 8px; */
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 550px;
+  min-height: 1058px;
 }
 .mid_feed{
   min-width: 598px;
@@ -1722,7 +1722,8 @@ input:active{
   
   overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 650px;
+  min-height: 600px;
+  max-height: 700px;
 }
 .mid_feed{
   min-width: 380px;
