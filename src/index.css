@@ -1066,17 +1066,23 @@ img{
   justify-content: center;
 }
 .posts .all_post{
-  /* padding-top: 80px; */
-  max-height: 900px;
-  min-height: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  max-height:900px;
+  min-height: 900px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+.posts .mf_up{
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 .detail .posts{
   margin-top: -358px !important;
  }
 .posts .all_post_data{
   margin-top: 60px;
+  /* padding-top: 60px; */
 }
 .all_post::-webkit-scrollbar{
   display: none;
