@@ -1543,6 +1543,23 @@ input:active{
   margin-bottom: -20px;
   padding: 8px;
   cursor: pointer;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p_r_data div:hover{
+  background-color: #333333;
+}
+buttom{
+  cursor: pointer;
+}
+.p_l_c{
+  display: flex;
+  flex-direction: row;
+}
+.p_l_c p{
+  margin-left: 5px;
 }
 
 

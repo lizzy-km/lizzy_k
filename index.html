@@ -8,14 +8,16 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/components/main.jsx"></script>
   <script>
     
     document.querySelectorAll('div').forEach(occurence => {
      occurence.addEventListener('click', (e) => {
             let elementId = e.target.id;
+           
             let elementTag = e.target.parentNode
-          
+
+            const [state ,setState] =useState(0);
            
             if(elementId =='pi'|| elementId=='name' ) {
   
