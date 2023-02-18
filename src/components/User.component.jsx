@@ -2,6 +2,7 @@ import cover from "../cover.png"
 import me from '../lalisa.jpg'
 import Top from "./top";
 import '../App.css'
+import Post from "./post";
 import { BrowserRouter, Route,Link } from "react-router-dom";
 // import index from "./Index.component";
 function User(){
@@ -281,73 +282,7 @@ return (
         </div>
             <div  className="all_post">
             {girlfriends.map((gf)=>(
-                <div className="all_post_data" key={gf.id} >
-
-           
-                <div  className="all_p_owner">
-                    <a href="">
-                        <img  className="p_o_p"   
-                        src={gf.pf}/>
-                    </a>
-                  
-                    
-                    <a href="{{ route('profiles.index') }}" className="p_o_n">
-                         <span  className="span">{gf.username}</span>
-                    </a>
-                    <div  className="p_opt">
-                        <strong> . . .</strong>
-                       
-                        <form action="" className="post_action" method="POST">
-                            <a className="ed_post" href="">Edit</a>
-                            
-                            <button type="submit" className="de_post">Delete</button>
-                        </form>
-                    </div>
-                    
-                </div>
-    
-                <div  className="post_data">
-                    <div  className="p_d_tex">
-                    <p>{gf.description}</p>
-                    </div>
-    
-                   
-                    <img  className='p_d_p' src={gf.image}/>
-    
-                   
-                 
-                    
-                </div>
-               
-                <div  className="post_react">
-                    <div  className="p_r_count">
-                        <div  className="p_l_c">
-                            200k others
-                        </div>
-                        <div  className="p_c_c">
-                            50M comments
-                        </div>
-                        <div  className="p_s_c">
-                            500k Shares
-                        </div>
-                    </div>
-                    <div  className="p_r_data">
-                        
-                    
-                    <div  className="p_r_r">
-                        Like
-                    </div>
-                    <div  className="p_r_c">
-                        comment
-                    </div>
-                    <div  className="p_r_s">
-                        Share
-                    </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
+                <Post gf={gf} id={gf.id} key={gf.id} />
             ))}
 
             <div className="height">
