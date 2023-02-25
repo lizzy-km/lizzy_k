@@ -1,13 +1,7 @@
 import React from "react";
-import Create from "./create"
 import {Link} from "react-router-dom"
-import { render } from "react-dom";
-import ReactDOM from 'react-dom/client';
-import Highlight from "./highlight";
 import  Post  from  './post'
 import '../index.css';
-// import { Highlight } from "@mui/icons-material";
-import { useState } from "react";
 
 const Mid = (props) => {
  
@@ -19,19 +13,10 @@ const Mid = (props) => {
      
       };
 
-      props.girlfriends.map((gf)=> {
-       let id = gf.id
-       
-      })
-     
-    //   document.querySelectorAll('div').forEach(occurence => {
-    //     occurence.addEventListener('click', (e) => {
-          
-    //   });
-    // });
+      
     
     return(
-
+       
         <div  id="nf"  className="newfeed">
     
 
@@ -41,10 +26,12 @@ const Mid = (props) => {
                     <div className="mf_hldata">
                     <div  className="mf_highlight_item">
                             <div className="hl_c">
-                                
-                                <div className="hl_m">
-                                    <img className=" hd_p br_1" src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"alt=""/>
+                                {props.user.map((user)=>(
+                                    <div className="hl_m">
+                                    <img className=" hd_p br_1" src={user.pf} alt={user.username}/>
                                 </div>
+                                ))}
+                                
                                 <div className="cr_s">
                                     <p className="s_add p_hover">+</p>
                                     <p className="cs_t">Create story</p>
@@ -83,13 +70,16 @@ const Mid = (props) => {
     <div  className=" mf_up">
             <div  className="pe_h">
                 <div  className=" mf_pe">
-                  <Link to='/User'>
-                    <a href="">
-                        <img   className="pe_m_p " 
+                {props.user.map((user)=>(
+                                 <Link to='/User'>
+                                 <a href="">
+                                     <img   className="pe_m_p " 
+                               
+                                 src={user.pf}
+                                  alt=""/> 
+                                 </a></Link>   
+                                    ))}
                   
-                    src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"
-                     alt=""/> 
-                    </a></Link>
                  
                   <div  id="create" className="pe_txt" onClick={create()} >
                         <span id="create">What's on your mind, Kaung?</span>

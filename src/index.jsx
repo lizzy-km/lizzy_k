@@ -118,21 +118,42 @@ const Index = () => {
    
    
   ];
+  let userinputname='Kaung Myat Soe'
+  let userinputemail='kaungmyatsoe2k21@gmail.com'
+  let userinputpass='Lizzy-02'
+  let userinputdetail='blah blah'
+  let userinputpf= 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg'
+  let userinputcv='https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg'
+  let userinputimg='https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
+  const user =[
+   { 
+   
+    username: userinputname,
+    id: '100000456348756',
+    email: userinputemail,
+    pass: userinputpass,
+    pf: userinputpf,
+    cv: userinputcv,
+    image:userinputimg,
+    description: userinputdetail
+  }
+
+  ]
 
   return (
   <main>
     <div className="nav_hold">
-    <Top/>
+    <Top user={user} />
     </div>
     
     <section id="b2" className="body-2">
              
              
-  <Left girlfriends={girlfriends} />    <Mid girlfriends={girlfriends} />   <Right girlfriends={girlfriends} />
+  <Left girlfriends={girlfriends} user={user}  />    <Mid girlfriends={girlfriends} user={user} />   <Right girlfriends={girlfriends} user={user} />
     </section>
     <div id="user">
           <div id="pf">
-          <User girlfriends={girlfriends} />
+          <User user={user} girlfriends={girlfriends} />
           </div>
         
         </div>

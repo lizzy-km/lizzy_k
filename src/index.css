@@ -1287,7 +1287,7 @@ input:active{
   position: relative;
   width: 111.604px;
   height: 198.406px;
- border: 1px solid #272727;
+ border: 0px solid #272727;
   margin: 8px;
   border-radius: 8px;
   display: flex;

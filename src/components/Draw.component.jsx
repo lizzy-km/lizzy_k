@@ -1,13 +1,7 @@
 import cover from "../cover.png"
-import rose from '../Rose`.jpg'
-import jisoo from "../jisoo.jpg"
-import lalisa from "../lalisa.jpg"
-import jennie from '../jennie.png'
 import Post from "./post"
-import { BrowserRouter, Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../App.css';
-// import { BrowserRouter, Route } from "react-router-dom";
-// import index from "./Index.component";
 function Draw(){
     const girlfriends = [
         {
@@ -132,7 +126,6 @@ return (
         {girlfriends.map((gf)=>(
             <div id="C3" className="C_1 card_1" key={gf.id} >
             <div id="2" draggable='true'
-                // onClick="reply_click(this.id)"
                 className="C_3 card_1">
                 <img  className="c-img" src={cover} alt=""></img>
                 <img id="pi" className="img p_hover " src={gf.pf} alt="Jisoo"></img>
@@ -186,10 +179,7 @@ return (
                                
                                     <img className="hl_mp br_1 " src={gf.image} alt=""/>
                                 </div>
-                                {/* <div className="hl_n">
-                                <img className="h_l_p p_hover" src={gf.pf} alt=""/>
-                                    <p className="hln_t">{gf.username}</p>
-                                </div> */}
+                               
                                 
                                 
                                 
@@ -229,9 +219,7 @@ return (
                                 <p>{gf.username} </p>
                             </div>
                         ))} 
-                        {/* <div className="u_firend_list ">
-
-                        </div> */}
+                        
                        
 
                     </div>

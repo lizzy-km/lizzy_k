@@ -1,10 +1,8 @@
-import cover from "../cover.png"
-import me from '../lalisa.jpg'
+
 import Top from "./top";
 import '../App.css'
 import Post from "./post";
-import { BrowserRouter, Route,Link } from "react-router-dom";
-// import index from "./Index.component";
+import {Link } from "react-router-dom";
 function User(){
     const girlfriends = [
         {
@@ -125,6 +123,27 @@ function User(){
        
        
       ];
+      let userinputname='Kaung Myat Soe'
+      let userinputemail='kaungmyatsoe2k21@gmail.com'
+      let userinputpass='Lizzy-02'
+      let userinputdetail='blah blah'
+      let userinputpf= 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg'
+      let userinputcv='https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg'
+      let userinputimg='https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
+      const user =[
+       { 
+       
+        username: userinputname,
+        id: '100000456348756',
+        email: userinputemail,
+        pass: userinputpass,
+        pf: userinputpf,
+        cv: userinputcv,
+        image:userinputimg,
+        description: userinputdetail
+      }
+    
+      ]
       
 return (
 
@@ -140,25 +159,28 @@ return (
     
 
         <div id="1" draggable='true' className="pf ">
+          {user.map((user)=>(
             <div className="card_1 C_2">
 
 
-                <img className="c-img" src={cover} alt=""></img>
-                <img id="pi" className="img p_hover " src={me} alt="Rose`"></img>
-                <p id="name" className=" u_n">
-                    Kaung Myat Soe
-                </p>
-                <div className="p-d">
+            <img className="c-img" src={user.cv} alt=""></img>
+            <img id="pi" className="img p_hover " src={user.pf} alt={user.username}></img>
+            <p id="name" className=" u_n">
+                {user.username}
+            </p>
+            <div className="p-d">
 
-                    <div className="cc bt b-d">Edit profile</div>
-                    <div className="cc bt b-c">
-                        Add to story
-                    </div>
-
-
+                <div className="cc bt b-d">Edit profile</div>
+                <div className="cc bt b-c">
+                    Add to story
                 </div>
 
+
             </div>
+
+        </div>
+          ))}
+            
         </div>
         <div className="data">
             <div className="l_b">
@@ -252,20 +274,23 @@ return (
             <div className="u_posts">
             <div  className=" mf_up">
             <div  className="pe_h">
+              {user.map((user)=>(
                 <div  className=" mf_pe">
                     <a href="">
                         <img   className="pe_m_p " 
                   
-                    src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg"
-                     alt=""/> 
+                    src={user.pf}
+                     alt={user.username}/> 
                     </a>
                  
                   <div  id="create" className="pe_txt"  >
-                        <span id="create">What's on your mind, Kaung?</span>
+                        <span id="create">What's on your mind, {user.username.split(" ")[0]}?</span>
                     </div>
                   
                     
                 </div>
+              ))}
+                
                 <div  className="mf_md">
                     <div  className="mf_live md_li">
                         Live video
@@ -281,7 +306,7 @@ return (
 
         </div>
             <div  className="all_post">
-            {girlfriends.map((gf)=>(
+            {user.map((gf)=>(
                 <Post gf={gf} id={gf.id} key={gf.id} />
             ))}
 

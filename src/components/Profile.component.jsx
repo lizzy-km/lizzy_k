@@ -1,8 +1,4 @@
-import cover from "../cover.png"
-import jisoo from "../jisoo.png";
-import { BrowserRouter, Route } from "react-router-dom";
-import { useState } from "react";
-// import index from "./Index.component";
+
 function Profile(){
 
 return (

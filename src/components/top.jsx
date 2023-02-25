@@ -1,8 +1,28 @@
 import React from "react";
-// import linearGradient from '../node_modules/styled-components'
 import {Link} from "react-router-dom"
 
-const Top = () => {
+const Top = (props) => {
+  let userinputname='Kaung Myat Soe'
+  let userinputemail='kaungmyatsoe2k21@gmail.com'
+  let userinputpass='Lizzy-02'
+  let userinputdetail='blah blah'
+  let userinputpf= 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg'
+  let userinputcv='https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg'
+  let userinputimg='https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
+  const user =[
+   { 
+   
+    username: userinputname,
+    id: '100000456348756',
+    email: userinputemail,
+    pass: userinputpass,
+    pf: userinputpf,
+    cv: userinputcv,
+    image:userinputimg,
+    description: userinputdetail
+  }
+
+  ]
   return (
     <div class="top">
       <div className="nav_l">
@@ -52,10 +72,13 @@ const Top = () => {
         </div>
         <div className="p_hover"><svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
         </div>
-        <Link to='/Auth'>
+        {user.map((user)=>(
+          <Link to='/Auth'>
         <a href="">
-          <img className="n_r_p" src="https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg" alt="" />
+          <img className="n_r_p" src={user.pf} alt={user.username}/>
         </a></Link>
+        ))}
+        
       </div>
     </div>
   );

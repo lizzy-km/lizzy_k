@@ -1,9 +1,5 @@
 
 import React from "react";
-import Create from "./create"
-import {Link} from "react-router-dom"
-import { render } from "react-dom";
-import ReactDOM from 'react-dom/client';
 import { useState } from "react";
 
 const Post = (props) => {
@@ -69,10 +65,10 @@ const Post = (props) => {
                             {like}{likec}
                         </div>
                         <div  className="p_c_c">
-                            50M comments
+                            
                         </div>
                         <div  className="p_s_c">
-                            500k Shares
+                            
                         </div>
                     </div>
                     <div  className="p_r_data">

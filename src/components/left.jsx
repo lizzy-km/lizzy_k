@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route,Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 const Left = (props) => {
 
@@ -8,13 +8,16 @@ const Left = (props) => {
 
 
 <div className="left_feed">
+{props.user.map((user)=>(
                 <Link to='/User' className="lf_me">
-                    <img className="lf_p p_hover" src='https://i.pinimg.com/originals/b2/8d/49/b28d498426618a770616b58b087fa07b.jpg' alt=""></img>
+                    <img className="lf_p p_hover" src={user.pf} alt={user.username}></img>
                     <div className="lf_n">
-                        Kaung Myat Soe
+                       
+                            {user.username}
+                      
                     </div>
                 </Link>
-
+  ))}
                 <Link to='/Sug' className="lf_me">
                 <img className="lf_p" src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/-XF4FQcre_i.png" alt=""></img>
                     <div className="lf_n">
