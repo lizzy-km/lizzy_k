@@ -129,8 +129,12 @@ function User(){
       let userinputdetail='blah blah'
       let userinputpf= 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg'
       let userinputcv='https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg'
-      let userinputimg='https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
-      const user =[
+      // let userinputimg=[
+      //   'https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg',
+      //   'https://i.pinimg.com/originals/ef/1c/c2/ef1cc2c1380f20532f1dd0d917513417.jpg',
+      //   'https://i.pinimg.com/originals/cd/4a/ff/cd4aff7dc0142c2edfdf1f9ab9802812.jpg',
+      // ]
+       const user =[
        { 
        
         username: userinputname,
@@ -139,11 +143,38 @@ function User(){
         pass: userinputpass,
         pf: userinputpf,
         cv: userinputcv,
-        image:userinputimg,
-        description: userinputdetail
-      }
+       
+      },
+      
     
       ]
+      const userpost=[
+        {
+          id:'up1',
+          pf: userinputpf,
+          username: userinputname,
+          detail:'Blah Blah',
+          image:'https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
+        },
+        {
+          id:'up2',
+          pf: userinputpf,
+          username: userinputname,
+          detail:'Blah Blah',
+          image:'https://i.pinimg.com/originals/ef/1c/c2/ef1cc2c1380f20532f1dd0d917513417.jpg'
+        },
+        {
+          id:'up3',
+          pf: userinputpf,
+          username: userinputname,
+          detail:'Blah Blah',
+          image:'https://i.pinimg.com/originals/cd/4a/ff/cd4aff7dc0142c2edfdf1f9ab9802812.jpg'
+        }
+      ]
+
+     
+      const data =user;
+
       
 return (
 
@@ -159,7 +190,7 @@ return (
     
 
         <div id="1" draggable='true' className="pf ">
-          {user.map((user)=>(
+          {data.map((user)=>(
             <div className="card_1 C_2">
 
 
@@ -274,7 +305,7 @@ return (
             <div className="u_posts">
             <div  className=" mf_up">
             <div  className="pe_h">
-              {user.map((user)=>(
+              {data.map((user)=>(
                 <div  className=" mf_pe">
                     <a href="">
                         <img   className="pe_m_p " 
@@ -306,7 +337,7 @@ return (
 
         </div>
             <div  className="all_post">
-            {user.map((gf)=>(
+            {userpost.map((gf)=>(
                 <Post gf={gf} id={gf.id} key={gf.id} />
             ))}
 

@@ -8,6 +8,8 @@ import Index from "./index";
 import User from "./components/User.component";
 import Auth from "./components/Auth.component";
 import Profile from "./components/Profile.component";
+import Story from "./components/story";
+import Top from "./components/top";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
            <Route exact path='/' element={<Index />} />
             <Route exact path='/Auth' element={<Auth/>}/>\
             <Route exact path='/Profile' element={<Profile/>}/>
+            <Route exact path='/Story' element={<Story/>}/>
             <Route exact path='/User' element={<User/>}/>
         </Routes>
        

@@ -141,6 +141,7 @@ section{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: .5s;
+    object-fit: cover;
     
   }
   .P_2::-webkit-scrollbar{
@@ -261,6 +262,7 @@ section{
   }
   .c-img{
     opacity: 0.5;
+    object-fit: cover;
   }
   /* .card_1:hover .body-1>.P_2{
     opacity: 1;
@@ -912,11 +914,10 @@ img{
   margin-left: 10px;
   width: 360px;
   background-color: #343434;
-  /* display: grid; */
   text-align: left;
-  height: 400px;
+  height: 450px;
   /* border: 2px solid #4e4e4e; */
-  border-radius: 10px;
+  border-radius: 8px;
   color: #ffffff;
 }
 #flop{
@@ -969,11 +970,12 @@ img{
   margin-top: 20px;
   margin-left: 10px;
   /* margin-left: 0px; */
-  width: 340px;
-  max-height: 350px;
+  width: 355px;
+  max-height: 380px;
   overflow-y: hidden;
   overflow-x: hidden;
   display: grid;
+border-radius: 8px;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
   /* height: 300px; */
@@ -1080,6 +1082,70 @@ img{
 .detail .posts{
   margin-top: -358px !important;
  }
+ .filter-card{
+  margin-top: 2rem;
+  width: 500px;
+  height: 100px;
+  background-color: #272727;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  transition: ease-in .25s;
+ }
+ .filter-card:hover #us{
+  display: block;
+ }
+ .filter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  margin-top: -0.5rem;
+ }.ft-bt{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  border-top: 1px solid #5b5b5b;
+  transition: ease-in .25s;
+ }
+ .ft-h{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: -0.6rem;
+ }
+ .ft-h p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+  background-color: #222222;
+  text-align: center;
+  font-size: .8rem;
+  border-radius: 4px;
+ }
+ #us{
+  background-color: #222222;
+  border: 0px solid;
+  font-size: 12px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-left: 8px;
+  /* display: none; */
+  transition: ease-in .25s;
+  
+ }
+
 .posts .all_post_data{
   margin-top: 60px;
   /* padding-top: 60px; */
@@ -2205,7 +2271,7 @@ body{
   margin-top: 40px;
   margin-left: 0;
   max-width: 412px;
-  object-fit: contain;
+  object-fit: cover;
  }
  .pf .card_1{
   padding-top: 40px;

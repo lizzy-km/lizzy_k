@@ -46,7 +46,7 @@ const Top = (props) => {
             className="s_o_f p_hover"
             type="text"
             name="sof"
-            value="Search on facebook"
+            
           />
         </div>
       </div>
