@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 const Post = (girlfriends) => {
 
-    
+    const User = girlfriends.gf.url;
+
     const [state ,setState] =useState(0);
       let like;
       let likec;
@@ -21,14 +22,14 @@ const Post = (girlfriends) => {
     if(state==1){
       likec =<p >Like</p>;
     }
-    const user = event => {
-        const cid=   event.currentTarget.id;
+    // const user = event => {
+    //     const cid=   event.currentTarget.id;
         
       
-           if(cid==girlfriends.gf.id){
-             girlfriends.push('/user')
-           }
-        }
+    //        if(cid==girlfriends.gf.id){
+    //          girlfriends.push('/user')
+    //        }
+    //     }
       
     
         return (
@@ -36,7 +37,7 @@ const Post = (girlfriends) => {
     
                
                     <div  className="all_p_owner">
-                        <Link to='/user' id={girlfriends.gf.id} onClick={user}  >
+                        <Link to={'/'+User} id={girlfriends.gf.id}   >
                             <img id={girlfriends.gf.id} key={girlfriends.gf.id}  className="p_o_p"   
                             src={girlfriends.gf.pf}/>
                         </Link>

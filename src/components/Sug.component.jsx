@@ -2,7 +2,7 @@
 
 import Top from "./top";
 import Draw from "./Draw.component"
-import User from "./User.component"
+import User from "./User"
 import React from "react";
 import '../App.css';
 import Profile from "./Profile.component";

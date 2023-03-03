@@ -3,7 +3,7 @@ import Left from './components/left'
 import Right from './components/right'
 import Top from './components/top'
 import Mid from './components/mid'
-import User from './components/User.component'
+import User from './components/User'
 import { useState } from "react"
 import { useEffect } from "react"
 import { Component } from "react"
@@ -19,7 +19,8 @@ class Index extends Component {
   
         girlfriends :[
           {
-              id: 'gf1',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf1',url:'Lalisa',
               username: "Lalisa Manoban",
               groupname:'Blackpink',
               description:
@@ -29,7 +30,8 @@ class Index extends Component {
              
             },
             {
-              id: 'gf2',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf2',url:'Jisoo',
               username: "Kim Jisoo",
               groupname:'Blackpink',
               description:
@@ -39,7 +41,8 @@ class Index extends Component {
                 "https://i.pinimg.com/474x/29/8a/2a/298a2a26ee41eb8d864c0bddd14218b2.jpg",
             },
             {
-              id: 'gf3',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf3',url:'Chaeyoung',
               username: "Park Chaeyoung",
               groupname:'Blackpink',
               description:
@@ -49,7 +52,8 @@ class Index extends Component {
                 "https://i.pinimg.com/474x/69/8f/41/698f416c08feb77049fcedbfe9b6de70.jpg",
             },
             {
-              id: 'gf4',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf4',url:'Jennie',
               username: "Jennie Kim",
               groupname:'Blackpink',
               description:
@@ -58,7 +62,8 @@ class Index extends Component {
               image:
                 "https://i.pinimg.com/474x/86/81/20/86812015336442c38a2b6e086125c8de.jpg",
             },{
-              id: 'gf5',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf5',url:'Hanni',
               username: "Hanni",
               groupname:'Newjeans',
               description:
@@ -68,7 +73,8 @@ class Index extends Component {
              
             },
             {
-              id: 'gf6',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf6',url:'Minji',
               username: "Minji",
               groupname:'Newjeans',
               description:
@@ -78,7 +84,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/00/dc/b9/00dcb9ffa9d338683cfbbab57a249527.jpg",
             },
             {
-              id: 'gf7',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf7',url:'Daniella',
               username: "Daniella",
               groupname:'Newjeans',
               description:
@@ -88,7 +95,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/f7/9f/7c/f79f7c41029cadbd0d990c9d97575239.jpg",
             },
             {
-              id: 'gf8',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf8',url:'Haerin',
               username: "Haerin",
               groupname:'Newjeans',
               description:
@@ -97,7 +105,8 @@ class Index extends Component {
               image:
                 "https://i.pinimg.com/originals/4a/dd/0b/4add0bb47728e72da5781c4cb556c14c.jpg",
             },{
-              id: 'gf9',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf9',url:'Hyein',
               username: "Hyein",
               groupname:'Newjeans',
               description:
@@ -107,28 +116,32 @@ class Index extends Component {
              
             },
             {
-              id:'up1',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id:'up1',url:'user',
               pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
               username: 'Kaung Myat Soe',
-              detail:'Blah Blah',
+              description:'Blah Blah',
               image:'https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
             },
             {
-              id:'up2',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id:'up2',url:'user',
               pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
               username: 'Kaung Myat Soe',
-              detail:'Blah Blah',
+              description:'Blah Blah',
               image:'https://i.pinimg.com/originals/ef/1c/c2/ef1cc2c1380f20532f1dd0d917513417.jpg'
             },
             {
-              id:'up3',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id:'up3',url:'user',
               pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
               username: 'Kaung Myat Soe',
-              detail:'Blah Blah',
+              description:'Blah Blah',
               image:'https://i.pinimg.com/originals/cd/4a/ff/cd4aff7dc0142c2edfdf1f9ab9802812.jpg'
             },
             {
-              id: 'gf10',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf10',url:'Winter',
               username: "Winter",
               groupname:'aespa',
               description:
@@ -138,7 +151,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/50/40/e2/5040e2d5e311959e8008a875c13f21ee.jpg",
             },
             {
-              id: 'gf11',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf11',url:'Karina',
               username: "Karina",
               groupname:'aespa',
               description:
@@ -148,7 +162,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/9d/5d/f8/9d5df8cc098e6a083b0721812a3ce3f3.jpg",
             },
             {
-              id: 'gf12',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf12',url:'NingNing',
               username: "Ning Ning",
               groupname:'aespa',
               description:
@@ -162,7 +177,8 @@ class Index extends Component {
         ],
         blackpink :[
           {
-              id: 'gf1',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf1',url:'Lalisa',
               username: "Lalisa Manoban",
               groupname:'Blackpink',
               description:
@@ -172,7 +188,8 @@ class Index extends Component {
              
             },
             {
-              id: 'gf2',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf2',url:'Jisoo',
               username: "Kim Jisoo",
               groupname:'Blackpink',
               description:
@@ -182,7 +199,8 @@ class Index extends Component {
                 "https://i.pinimg.com/474x/29/8a/2a/298a2a26ee41eb8d864c0bddd14218b2.jpg",
             },
             {
-              id: 'gf3',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf3',url:'Chaeyoung',
               username: "Park Chaeyoung",
               groupname:'Blackpink',
               description:
@@ -192,7 +210,8 @@ class Index extends Component {
                 "https://i.pinimg.com/474x/69/8f/41/698f416c08feb77049fcedbfe9b6de70.jpg",
             },
             {
-              id: 'gf4',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf4',url:'Chaeyoung',
               username: "Jennie Kim",
               groupname:'Blackpink',
               description:
@@ -206,7 +225,9 @@ class Index extends Component {
         ],
         newjeans :[
           {
-              id: 'gf5',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf5',
+            url:'Hanni',
               username: "Hanni",
               groupname:'Newjeans',
               description:
@@ -216,7 +237,8 @@ class Index extends Component {
              
             },
             {
-              id: 'gf6',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf6', url:'Minji',
               username: "Minji",
               groupname:'Newjeans',
               description:
@@ -226,7 +248,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/00/dc/b9/00dcb9ffa9d338683cfbbab57a249527.jpg",
             },
             {
-              id: 'gf7',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf7', url:'Daniella',
               username: "Daniella",
               groupname:'Newjeans',
               description:
@@ -236,7 +259,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/f7/9f/7c/f79f7c41029cadbd0d990c9d97575239.jpg",
             },
             {
-              id: 'gf8',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf8', url:'Haerin',
               username: "Haerin",
               groupname:'Newjeans',
               description:
@@ -245,7 +269,8 @@ class Index extends Component {
               image:
                 "https://i.pinimg.com/originals/4a/dd/0b/4add0bb47728e72da5781c4cb556c14c.jpg",
             },{
-              id: 'gf9',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf9', url:'Hyein',
               username: "Hyein",
               groupname:'Newjeans',
               description:
@@ -261,7 +286,8 @@ class Index extends Component {
         aespa :[
           
             {
-              id: 'gf10',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf10', url:'Winter',
               username: "Winter",
               groupname:'aespa',
               description:
@@ -271,7 +297,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/50/40/e2/5040e2d5e311959e8008a875c13f21ee.jpg",
             },
             {
-              id: 'gf11',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf11',url:'Karina',
               username: "Karina",
               groupname:'aespa',
               description:
@@ -281,7 +308,8 @@ class Index extends Component {
                 "https://i.pinimg.com/originals/9d/5d/f8/9d5df8cc098e6a083b0721812a3ce3f3.jpg",
             },
             {
-              id: 'gf12',
+               cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id: 'gf12',url:'NingNing',
               username: "Ning Ning",
               groupname:'aespa',
               description:
@@ -301,7 +329,7 @@ class Index extends Component {
          { 
          
           username: 'Kaung Myat Soe',
-          id: '100000456348756',
+           id: '100000456348756',
           email: 'kaungmyatsoe2k21@gmail.com',
           pass: 'Lizzy-02',
           pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
@@ -325,24 +353,27 @@ class Index extends Component {
       ],
          userpost:[
           {
-            id:'up1',
+             cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id:'up1',url:'user',
             pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
             username: 'Kaung Myat Soe',
-            detail:'Blah Blah',
+            description:'Blah Blah',
             image:'https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
           },
           {
-            id:'up2',
+             cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id:'up2',url:'user',
             pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
             username: 'Kaung Myat Soe',
-            detail:'Blah Blah',
+            description:'Blah Blah',
             image:'https://i.pinimg.com/originals/ef/1c/c2/ef1cc2c1380f20532f1dd0d917513417.jpg'
           },
           {
-            id:'up3',
+             cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+  id:'up3',url:'user',
             pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
             username: 'Kaung Myat Soe',
-            detail:'Blah Blah',
+            description:'Blah Blah',
             image:'https://i.pinimg.com/originals/cd/4a/ff/cd4aff7dc0142c2edfdf1f9ab9802812.jpg'
           }
         ]
@@ -365,7 +396,7 @@ class Index extends Component {
       return (
         <main>
           <div className="nav_hold">
-          <Top user={this.state.user} />
+          <Top user={this.state.user} data={this.state} />
           </div>
           
           <section id="b2" className="body-2">
@@ -375,7 +406,7 @@ class Index extends Component {
           </section>
           <div id="user">
                 <div id="pf">
-                <User user={this.state.user} blackpink={this.state.blackpink} newjeans={this.state.newjeans} aespa={this.state.aespa}   girlfriends={this.state.girlfriends} />
+                <User user={this.state.user}   />
                 </div>
               
               </div>
