@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../index.css'
 
 const Right = (props) => {
@@ -21,10 +22,12 @@ const Right = (props) => {
           {props.girlfriends.map((gf)=>(
                 <div className="rf_usr">
                 <div className="rf_usr_p ">
-                    <img className="p_hover" src={gf.pf} alt=""/>
+                  <Link to={'/'+gf.url}><img className="p_hover" src={gf.pf} alt=""/></Link>
+                    
                 </div>
                 <div className="rf_usr_n">
-                    <p>{gf.username}</p>
+                <Link to={'/'+gf.url}><p>{gf.username}</p></Link>
+                    
                 </div>
             </div>
             ))}

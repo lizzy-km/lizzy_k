@@ -5,14 +5,14 @@ import '../index.css';
 // import { NextWeek } from "@mui/icons-material";
 
 const Mid = ({data}) => {
-    let pdata;
+    // let pdata;
     // const [loading,setLoading] = useState(true);
     const [state ,setState] =useState(data.girlfriends);
     const [filter ,setFilter]=useState('All');
 
-      pdata=data.girlfriends;
+    //  const pdata=data.girlfriends;
       
-    
+     
     let user =data.user;
     let userpost=data.userpost;
     let blackpink=data.blackpink;
@@ -67,7 +67,8 @@ const Mid = ({data}) => {
                                 
                             </div>
                             <div className="hl_n">
-                            <img className="h_l_p p_hover" id={gf.id} key={gf.id} src={gf.pf} alt=""/>
+                                <Link to={'/'+gf.url}><img className="h_l_p p_hover" id={gf.id} key={gf.id} src={gf.pf} alt=""/></Link>
+                            
                                 <p id={gf.id} key={gf.id} className="hln_t">{gf.username}</p>
                             </div>
                             
@@ -89,7 +90,7 @@ const Mid = ({data}) => {
             <div  className="pe_h">
                 <div  className=" mf_pe">
                 {user.map((user)=>(
-                                 <Link to='/User'>
+                                 <Link to='/user'>
                                  <a href="">
                                      <img   className="pe_m_p " 
                                

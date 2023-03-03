@@ -108,7 +108,7 @@ url:'user',
     const  girlfriends =[
         {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf1',
+id: 'gf1',url:'Lalisa',
             username: "Lalisa Manoban",
             groupname:'Blackpink',
             description:
@@ -119,7 +119,7 @@ id: 'gf1',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf2',
+id: 'gf2',url:'Jisoo',
             username: "Kim Jisoo",
             groupname:'Blackpink',
             description:
@@ -130,7 +130,7 @@ id: 'gf2',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf3',
+id: 'gf3',url:'Chaeyoung',
             username: "Park Chaeyoung",
             groupname:'Blackpink',
             description:
@@ -141,7 +141,7 @@ id: 'gf3',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf4',
+id: 'gf4',url:'Jennie',
             username: "Jennie Kim",
             groupname:'Blackpink',
             description:
@@ -151,7 +151,7 @@ id: 'gf4',
               "https://i.pinimg.com/474x/86/81/20/86812015336442c38a2b6e086125c8de.jpg",
           },{
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf5',
+id: 'gf5',url:'Hanni',
             username: "Hanni",
             groupname:'Newjeans',
             description:
@@ -162,7 +162,7 @@ id: 'gf5',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf6',
+id: 'gf6',url:'Minji',
             username: "Minji",
             groupname:'Newjeans',
             description:
@@ -173,7 +173,7 @@ id: 'gf6',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf7',
+id: 'gf7',url:'Daniella',
             username: "Daniella",
             groupname:'Newjeans',
             description:
@@ -184,7 +184,7 @@ id: 'gf7',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf8',
+id: 'gf8',url:'Haerin',
             username: "Haerin",
             groupname:'Newjeans',
             description:
@@ -194,7 +194,7 @@ id: 'gf8',
               "https://i.pinimg.com/originals/4a/dd/0b/4add0bb47728e72da5781c4cb556c14c.jpg",
           },{
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf9',
+id: 'gf9',url:'Hyein',
             username: "Hyein",
             groupname:'Newjeans',
             description:
@@ -205,7 +205,7 @@ id: 'gf9',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id:'up1',
+id:'up1',url:'user',
             pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
             username: 'Kaung Myat Soe',
             description:'Blah Blah',
@@ -213,7 +213,7 @@ id:'up1',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id:'up2',
+id:'up2',url:'user',
             pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
             username: 'Kaung Myat Soe',
             description:'Blah Blah',
@@ -221,7 +221,7 @@ id:'up2',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id:'up3',
+id:'up3',url:'user',
             pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
             username: 'Kaung Myat Soe',
             description:'Blah Blah',
@@ -229,7 +229,7 @@ id:'up3',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf10',
+id: 'gf10',url:'Winter',
             username: "Winter",
             groupname:'aespa',
             description:
@@ -240,7 +240,7 @@ id: 'gf10',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf11',
+id: 'gf11',url:'Karina',
             username: "Karina",
             groupname:'aespa',
             description:
@@ -251,7 +251,7 @@ id: 'gf11',
           },
           {
              cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-id: 'gf12',
+id: 'gf12',url:'NingNing',
             username: "Ning Ning",
             groupname:'aespa',
             description:
@@ -526,6 +526,7 @@ id: 'gf12',
 
       if(uri=='/user'){
         var profile =user;
+        // var post = userpost;
       }
       if(uri=='/Lalisa'){
         var profile =Lalisa;
@@ -556,12 +557,13 @@ id: 'gf12',
       }
       if(uri=='/Hyein'){
         var profile =Hyein;
+        
       }
+      
+
       const [post ,setPost] =useState(profile);
-
-
    
-     
+    //   console.log(friend);
     
       
       
@@ -679,10 +681,11 @@ return (
                     <div className="u_friend_list ">
         
                     {friend.map((gf)=>(
-                            <div className="u_firend_list u_pi_1">
+                       
+                            <Link to={'/'+gf.url} onClick="window.location.reload()" className="u_firend_list u_pi_1">
                                 <img src={gf.image} alt=""/>
                                 <p>{gf.username} </p>
-                            </div>
+                            </Link>
                         ))} 
                         {/* <div className="u_firend_list ">
         
