@@ -10,7 +10,26 @@
 * {
   scrollbar-width: none;
 }
-
+.err{
+  width: 100%;
+  height: 20rem;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.err button{
+  background-color: #0370ffed;
+  border: 0px;
+  border-radius: 8px;
+  padding: .4rem;
+  margin: 1rem;
+  color: #ededed;
+  font-weight: 600;
+  letter-spacing: .06rem;
+}
 span{
   text-decoration: none;
   outline-style: none;

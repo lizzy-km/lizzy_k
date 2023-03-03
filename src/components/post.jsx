@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Post = (girlfriends) => {
 
     const User = girlfriends.gf.url;
-
+    // console.log(gf.id)
     const [state ,setState] =useState(0);
       let like;
       let likec;
@@ -37,15 +37,15 @@ const Post = (girlfriends) => {
     
                
                     <div  className="all_p_owner">
-                        <Link to={'/'+User} id={girlfriends.gf.id}   >
+                        <Link to={'/'+girlfriends.gf.url} id={girlfriends.gf.id}   >
                             <img id={girlfriends.gf.id} key={girlfriends.gf.id}  className="p_o_p"   
                             src={girlfriends.gf.pf}/>
                         </Link>
                       
                         
-                        <a href="{{ route('profiles.index') }}" className="p_o_n">
+                        <Link  to={'/'+girlfriends.gf.url} className="p_o_n">
                              <span id={girlfriends.gf.id} key={girlfriends.gf.id}  className="span">{girlfriends.gf.username}</span>
-                        </a>
+                        </Link>
                         <div  className="p_opt">
                             <strong> . . .</strong>
                            

@@ -537,6 +537,9 @@ id: 'gf12',
       if(uri=='/Jisoo'){
         var profile =Jisoo;
       }
+      if(uri=='/Chaeyoung'){
+        var profile =Chaeyoung;
+      }
       if(uri=='/Winter'){
         var profile =Winter;
       }
@@ -548,6 +551,9 @@ id: 'gf12',
       }
       if(uri=='/Hanni'){
         var profile =Hanni;
+      }
+      if(uri=='/Minji'){
+        var profile =Minji;
       }
       if(uri=='/Daniella'){
         var profile =Daniella;

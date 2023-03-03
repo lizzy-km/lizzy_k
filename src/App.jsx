@@ -10,6 +10,7 @@ import Auth from "./components/Auth.component";
 import Profile from "./components/Profile.component";
 import Story from "./components/story";
 import Top from "./components/top";
+import Error from "./components/Error";
 
 function App() {
  const girlfriends =[
@@ -164,6 +165,7 @@ function App() {
   <Router>
    
         <Routes>
+            <Route  exact path='*' element={<Error />}/>
            <Route exact path='/Sug' element={<Sug />} />
            <Route exact path='/' element={<Index />} />
             <Route exact path='/Auth' element={<Auth/>}/>\
