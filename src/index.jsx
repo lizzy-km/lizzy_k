@@ -395,21 +395,20 @@ class Index extends Component {
     render() {
       return (
         <main>
-          <div className="nav_hold">
-          <Top user={this.state.user} data={this.state} />
-          </div>
-          
-          <section id="b2" className="body-2">
-                   
-                   
-        <Left user={this.state.user}  />    <Mid data={this.state} />   <Right blackpink={this.state.blackpink} newjeans={this.state.newjeans} aespa={this.state.aespa}   girlfriends={this.state.girlfriends} user={this.state.user} />
-          </section>
-          <div id="user">
+         
+
+         <section id="b2" className="body-2">
+    <Left   user={this.state.user} />
+    <Mid data={this.state}/> 
+    <Right blackpink={this.state.blackpink} newjeans={this.state.newjeans} aespa={this.state.aespa}   girlfriends={this.state.girlfriends} user={this.state.user} />
+    </section>
+    <div id="user">
                 <div id="pf">
                 <User user={this.state.user}   />
                 </div>
               
               </div>
+          
         </main>
         );
         

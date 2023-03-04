@@ -28,7 +28,7 @@ const User = ()=>{
        ]
     const Lalisa =[{
         cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
-        id: 'gf1',
+        id: 'gf1',url:'Lalisa',
                     username: "Lalisa Manoban",
                     groupname:'Blackpink',
                     description:
