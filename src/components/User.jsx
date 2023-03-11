@@ -187,7 +187,7 @@ return (
                     </a>
                  
                   <div  id="create" className="pe_txt"  >
-                        <span id="create">What's on your mind, {Iproduct.title}?</span>
+                        <span id="create">What's on your mind, {Iproduct.title?.substring(0,10)}?</span>
                     </div>
                   
                     
