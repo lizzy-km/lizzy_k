@@ -20,7 +20,7 @@ const Right = ({product}) => {
             </div>
             <div className="ct_hc">
           {product.map((gf)=>(
-                <div className="rf_usr">
+                <div className="flex text-[.8rem] gap-2  p-[.5rem]">
                 <div className="rf_usr_p ">
                   <Link to={'/'+gf.id}><img className="p_hover" src={gf.image} alt=""/></Link>
                     
