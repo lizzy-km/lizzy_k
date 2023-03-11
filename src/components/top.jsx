@@ -82,19 +82,20 @@ const Top = ({product,setProduct,data}) => {
           <div className="searchdata">
             {sproduct.map((dat)=>{
               
-              if(val){
-                return(
+             return(
+
+              
                   <div id={dat.id} className="sdata">
-              <Link to={'/'+dat.id} className="sd-img">
-                <img src={dat.image} alt=""/>
+              <Link to={`/User/${data.id}`} className="sd-img">
+                <img className=" hover:p-[.1rem] border-2 border-slate-400" src={dat.image} alt=""/>
               </Link>
-              <Link to={'/'+dat.id} className="sd-n">
-                <p>{dat.title.substring(0, 10)} . . .</p>
+              <Link to={`/User/${data.id}`} className="sd-n">
+                <p className=" text-center px-[.5rem] pb-[1.5rem] " >{dat.title.substring(0, 10)} . . .</p>
               </Link>
               </div>
-                );
+                ) ;
                 
-              }
+              
             })}
             
           </div>

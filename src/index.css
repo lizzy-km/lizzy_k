@@ -42,7 +42,7 @@
 .ser:hover .searchdata{
   display: flex;
   max-height: 300px;
-  min-height:0px;
+  min-height:20px;
 }
 .searchdata{
   
@@ -65,6 +65,7 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  text-align: center;
 }
 .sd-img {
   display: flex;
