@@ -37,7 +37,7 @@ const Post = ({gf}) => {
                       
                         
                         <Link  to={'/'+gf.id} className="p_o_n">
-                             <span id={gf.id} key={gf.id}  className="span">{gf.title}</span>
+                             <span id={gf.id} key={gf.id}  className="span">{gf.title?.substring(0,20)}</span>
                         </Link>
                         <div  className="p_opt">
                             <strong> . . .</strong>
@@ -53,7 +53,7 @@ const Post = ({gf}) => {
             
                     <div  className="post_data">
                         <div id={gf.id} key={gf.id}  className="p_d_tex">
-                        <p>{gf.description}</p>
+                        <p>{gf.description?.substring(0,100)} . . .</p>
                         </div>
             
                        
