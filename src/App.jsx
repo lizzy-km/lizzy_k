@@ -15,10 +15,11 @@ import Video from "./components/video";
 import Group from "./components/group";
 import Mid from "./components/mid";
 import { useState, useEffect } from "react";
+
 // import Mid from "./components/mid";
 const App =()=> {
 
-
+  
  
 const [product, setProduct]=useState([]);
 
@@ -54,6 +55,7 @@ useEffect(()=>{
 
   return(
   <Router >
+   
     <main>
     <div className="nav_hold">
     <Top data={data} product={product} setProduct={setProduct} />

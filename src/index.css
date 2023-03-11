@@ -42,14 +42,13 @@
 .ser:hover .searchdata{
   display: flex;
   max-height: 300px;
-  min-height: 0px;
+  min-height:0px;
 }
 .searchdata{
-  max-height: 300px;
-  min-height:0px;
+  
   overflow-y: scroll;
   display: none;
-  opacity: 0;
+  /* opacity: 0; */
   flex-direction: column;
   align-items: center;
   background-color: #222222;

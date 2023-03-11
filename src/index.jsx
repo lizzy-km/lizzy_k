@@ -8,6 +8,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { Component } from "react"
 import { Link } from "react-router-dom"
+import Loading from "./components/Loading"
 
 
 
@@ -33,28 +34,40 @@ const index = ({product}) => {
    ]
    console.log(product)
 
+   const [loading, setLoading] = useState(true)
 
+   useEffect(() => {
+     setTimeout(() => setLoading(false), 6000)
+   }, [])
    
 
   
     
       return (
-        <main>
+        <>
+        {loading === false ? (
+            <main>
          
 
-         <section id="b2" className="body-2">
-    <Left user={user} product={product}  />
-    <Mid product={product} /> 
-    <Right product={product} />
-    </section>
-    <div id="user">
-                <div id="pf">
-                <User user={user} />
-                </div>
-              
-              </div>
-          
-        </main>
+            <section id="b2" className="body-2">
+       <Left user={user} product={product}  />
+       <Mid product={product} /> 
+       <Right product={product} />
+       </section>
+       <div id="user">
+                   <div id="pf">
+                   <User user={user} />
+                   </div>
+                 
+                 </div>
+             
+           </main>
+        ) : (
+          <Loading/>
+        ) }
+       
+        </>
+       
         );
         
   
