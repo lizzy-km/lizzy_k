@@ -30,14 +30,25 @@ const Top = ({product,setProduct,data}) => {
 
   const type =event=>{
     setVal(event.target.value)
-    
+      const valu =event.target.value
       setProduct(sproduct)
+
+      if(valu===''){
+        setProduct(data)
+      }
     
     
   }
- 
 
-  const [val,setVal] = useState(data)
+  // useEffect(()=>{
+  //   setProduct(data)
+  // },[])
+
+  // if(val===''){
+  //   setProduct(data)
+  // }
+
+  const [val,setVal] = useState('')
  
   const sproduct = (product || []).filter(data => data.title.toLowerCase().includes(val)) 
 

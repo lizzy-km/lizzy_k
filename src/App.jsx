@@ -15,11 +15,16 @@ import Video from "./components/video";
 import Group from "./components/group";
 import Mid from "./components/mid";
 import { useState, useEffect } from "react";
+import Loading from "./components/Loading";
 
 // import Mid from "./components/mid";
 const App =()=> {
 
-  
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000)
+  }, [])
  
 const [product, setProduct]=useState([]);
 
@@ -54,6 +59,8 @@ useEffect(()=>{
 
 
   return(
+    <>
+    {loading === false ? (
   <Router >
    
     <main>
@@ -87,6 +94,11 @@ useEffect(()=>{
         </Routes>
        
   </Router>
+  ) : (
+    <Loading/>
+  ) }
+ 
+  </>
  );
         
 

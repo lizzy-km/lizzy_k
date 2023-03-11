@@ -44,8 +44,7 @@ const index = ({product}) => {
   
     
       return (
-        <>
-        {loading === false ? (
+        
             <main>
          
 
@@ -62,11 +61,7 @@ const index = ({product}) => {
                  </div>
              
            </main>
-        ) : (
-          <Loading/>
-        ) }
-       
-        </>
+        
        
         );
         
