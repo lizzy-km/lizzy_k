@@ -89,7 +89,7 @@ const Top = ({product,setProduct,data}) => {
                 <img src={dat.image} alt=""/>
               </Link>
               <Link to={'/'+dat.id} className="sd-n">
-                <p>{dat.title.substring(0, 10)}</p>
+                <p>{dat.title.substring(0, 10)} . . .</p>
               </Link>
               </div>
                 );

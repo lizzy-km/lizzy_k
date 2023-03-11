@@ -26,7 +26,7 @@ const Right = ({product}) => {
                     
                 </div>
                 <div className="rf_usr_n">
-                <Link to={'/'+gf.id}><p>{gf.title}</p></Link>
+                <Link to={'/'+gf.id}><p>{gf.title.substring(0,15)} . . .</p></Link>
                     
                 </div>
             </div>
