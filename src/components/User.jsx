@@ -84,8 +84,8 @@ return (
           {/* ))} */}
             
         </div>
-        <div className="data">
-            <div className="l_b">
+        <div className=" flex">
+            <div className="">
         
         
                 <div className="u_intro">
@@ -174,7 +174,7 @@ return (
                     </div>
                 </div>
             </div>
-            <div className="u_posts">
+            <div className="">
             <div  className=" mf_up">
             <div  className="pe_h">
               {/* {Iproduct.map((user)=>( */}
