@@ -80,22 +80,22 @@ const Top = ({product,setProduct,data}) => {
             value ={val} placeholder='Search on facebook'
           />
           <div className="searchdata">
-            {/* {girlfriends.map((dat)=>{
+            {sproduct.map((dat)=>{
               
-              if(dat.id){
+              if(val){
                 return(
                   <div id={dat.id} className="sdata">
-              <Link to={'/'+dat.url} className="sd-img">
+              <Link to={'/'+dat.id} className="sd-img">
                 <img src={dat.image} alt=""/>
               </Link>
-              <Link to={'/'+dat.url} className="sd-n">
-                <p>{dat.username}</p>
+              <Link to={'/'+dat.id} className="sd-n">
+                <p>{dat.title.substring(0, 10)}</p>
               </Link>
               </div>
                 );
                 
               }
-            })} */}
+            })}
             
           </div>
         </div>
