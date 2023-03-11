@@ -44,10 +44,10 @@ const Top = ({product,setProduct,data}) => {
   console.log(sproduct)
 
   
-    if(val===''){
-      setProduct(data)
+    // if(val===''){
+    //   setProduct(data)
   
-    }
+    // }
   
   
 
