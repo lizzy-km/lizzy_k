@@ -28,17 +28,7 @@ const Top = ({product,setProduct,data}) => {
     id:'0'
   }]
 
-  const type =event=>{
-    setVal(event.target.value)
-      const valu =event.target.value
-      setProduct(sproduct)
-
-      if(valu===''){
-        setProduct(data)
-      }
-    
-    
-  }
+ 
 
   // useEffect(()=>{
   //   setProduct(data)
@@ -59,8 +49,41 @@ const Top = ({product,setProduct,data}) => {
     //   setProduct(data)
   
     // }
+    const hdata =  sproduct.map((dat)=>{
+              
+      return(
+
+       
+           <div id={dat.id} className="sdata">
+       <Link to={`/User/${data.id}`} className="sd-img">
+         <img className=" hover:p-[.1rem] border-2 border-slate-400" src={dat.image} alt=""/>
+       </Link>
+       <Link to={`/User/${data.id}`} className="sd-n">
+         <p className=" text-center px-[.5rem] pb-[1.5rem] " >{dat.title.substring(0, 10)} . . .</p>
+       </Link>
+       </div>
+         ) ;
+         
+       
+     })
+
+     const[sdata,setSdata] = useState()
   
+     const type =event=>{
+      setVal(event.target.value)
+        const valu =event.target.value
+        setProduct(sproduct)
   
+        if(valu===''){
+          setProduct(data)
+          setSdata()
+        }
+        else{
+          setSdata(hdata)
+        }
+      
+      
+    }
 
   
   
@@ -92,23 +115,7 @@ const Top = ({product,setProduct,data}) => {
             value ={val} placeholder='Search on facebook'
           />
           <div className="searchdata">
-            {sproduct.map((dat)=>{
-              
-             return(
-
-              
-                  <div id={dat.id} className="sdata">
-              <Link to={`/User/${data.id}`} className="sd-img">
-                <img className=" hover:p-[.1rem] border-2 border-slate-400" src={dat.image} alt=""/>
-              </Link>
-              <Link to={`/User/${data.id}`} className="sd-n">
-                <p className=" text-center px-[.5rem] pb-[1.5rem] " >{dat.title.substring(0, 10)} . . .</p>
-              </Link>
-              </div>
-                ) ;
-                
-              
-            })}
+           {sdata}
             
           </div>
         </div>
