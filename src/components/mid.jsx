@@ -4,34 +4,49 @@ import  Post  from  './post'
 import '../index.css';
 // import { NextWeek } from "@mui/icons-material";
 
-const Mid = ({data}) => {
-    // let pdata;
-    // const [loading,setLoading] = useState(true);
-    const [state ,setState] =useState(data.girlfriends);
-    const [filter ,setFilter]=useState('All');
+const Mid = ({product}) => {
 
-    //  const pdata=data.girlfriends;
-      
+    
+    console.log(product)
+    const user =[
+        { 
+        
+         username: 'Kaung Myat Soe',
+          id: '100000456348756',
+         email: 'kaungmyatsoe2k21@gmail.com',
+         pass: 'Lizzy-02',
+         pf: 'https://i.pinimg.com/originals/b2/24/98/b2249825f1f726eb175a0d08c0396ece.jpg',
+         cv: 'https://i.pinimg.com/originals/ab/46/c0/ab46c0af4b69761acf4f844f0796aeae.jpg',
+         image:[
+           'https://i.pinimg.com/originals/d3/7f/9e/d37f9e47dd65894cebab9e091a9b842d.jpg'
+           
+         ],
+         
+         description: 'blah blah'
+       }
      
-    let user =data.user;
-    let userpost=data.userpost;
-    let blackpink=data.blackpink;
-    let newjeans=data.newjeans;
-    let aespa=data.aespa;
-
-   
-  
- 
-  function create (){
-        // let mid =document.getElementsByTagName("data");
-            // let create =document.getElementsByTagName('ce');
-              // mid.style.display='none';
-              // create.style.display="flex"
-     
-      };
+       ]
 
 
- 
+    
+//     const[product,setProduct]=useState([]);
+
+// console.log(product)
+
+//   useEffect(()=>{
+//     fetchData()
+//   },[])
+
+//   const fetchData = async () =>{
+//     const api = await fetch(`https://fakestoreapi.com/products/`)
+//     const data =await api.json();
+//     setProduct(data);
+//     // console.log(data)
+
+
+
+//   }
+
     
     return(
        
@@ -46,7 +61,7 @@ const Mid = ({data}) => {
                             <div className="hl_c">
                                 {user.map((user)=>(
                                     <div className="hl_m">
-                                    <img className=" hd_p br_1" src={user.pf} alt={user.username}/>
+                                    <img className=" hd_p br_1" src={user.image} alt={user.username}/>
                                 </div>
                                 ))}
                                 
@@ -58,7 +73,7 @@ const Mid = ({data}) => {
                             </div>
                         </div>
                     </div>
-                    {state.map((gf)=>(
+                    {product.map((gf)=>(
                         <div  className="mf_highlight_item" id={gf.id} key={gf.id} >
                         <div className="hl_c">
                        
@@ -67,9 +82,9 @@ const Mid = ({data}) => {
                                 
                             </div>
                             <div className="hl_n">
-                                <Link to={'/'+gf.url}><img className="h_l_p p_hover" id={gf.id} key={gf.id} src={gf.pf} alt=""/></Link>
+                                <Link to={'/'+gf.url}><img className="h_l_p p_hover" id={gf.id} key={gf.id} src={gf.image} alt=""/></Link>
                             
-                                <p id={gf.id} key={gf.id} className="hln_t">{gf.username}</p>
+                                <p id={gf.id} key={gf.id} className="hln_t">{gf.title.substring(0,10)}</p>
                             </div>
                             
                             
@@ -89,18 +104,18 @@ const Mid = ({data}) => {
     <div  className=" mf_up">
             <div  className="pe_h">
                 <div  className=" mf_pe">
-                {user.map((user)=>(
+                {user?.map((user)=>(
                                  <Link to='/user'>
                                  <a href="">
                                      <img   className="pe_m_p " 
                                
-                                 src={user.pf}
+                                 src={user.image}
                                   alt=""/> 
                                  </a></Link>   
                                     ))}
                   
                  
-                  <div  id="create" className="pe_txt" onClick={create()} >
+                  <div  id="create" className="pe_txt"  >
                         <span id="create">What's on your mind, Kaung?</span>
                     </div>
                   
@@ -152,7 +167,7 @@ const Mid = ({data}) => {
         
         </div> */}
        <div>
-        <div className="filter-card">
+        {/* <div className="filter-card">
         <ul className="filter">
             <div className="ft-h">
             <h6> Filter</h6>
@@ -193,11 +208,11 @@ const Mid = ({data}) => {
                 
 
                 </ul>  
-            </div>
+            </div> */}
         </div>
     <div  className="all_post">
        
-            {state.map((gf)=>(
+            {product.map((gf)=>(
                 <Post gf={gf} id={gf.id} key={gf.id}/>
             ))}
             

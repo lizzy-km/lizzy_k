@@ -1,14 +1,14 @@
 import React from "react";
 import {Link } from "react-router-dom";
 
-const Left = (props) => {
+const Left = ({product,user}) => {
 
     return(
 
 
 
 <div className="left_feed">
-{props.user.map((user)=>(
+{user.map((user)=>(
                 <Link to='/User' className="lf_me">
                     <img className="lf_p p_hover" src={user.pf} alt={user.username}></img>
                     <div className="lf_n">

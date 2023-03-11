@@ -1,5 +1,9 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   transition: .25s;
   text-decoration: none;
@@ -10,6 +14,11 @@
 * {
   scrollbar-width: none;
 }
+
+.s-input{
+  background-color: white;
+}
+
 .err{
   width: 100%;
   height: 20rem;
@@ -1283,20 +1292,7 @@ input:active{
   border-style: none;
 }
 
-.nav_m{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-.nav_m div{
-  min-width: 111.594px;
-  height: 56px;
-  cursor: pointer;
-  border-radius: 8px 8px 0px 0px;
-  margin-top: -8px;
-  padding-top: 16px;
-}
+
 .nav_m div:hover{
   background-color: #333333;
 }

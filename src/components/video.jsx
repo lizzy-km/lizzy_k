@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import VideoData from './VideoData';
 
 const video = () => {
+
+ 
+
+ 
+
   return (
-    <div>
-      Video
-    </div>
+    <div className=' flex flex-col '>
+      video
+       </div>
+
   )
 }
 

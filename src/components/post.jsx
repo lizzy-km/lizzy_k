@@ -3,9 +3,9 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Post = (girlfriends) => {
+const Post = ({gf}) => {
 
-    const User = girlfriends.gf.url;
+    // const User = gf.url;
     // console.log(gf.id)
     const [state ,setState] =useState(0);
       let like;
@@ -22,29 +22,22 @@ const Post = (girlfriends) => {
     if(state==1){
       likec =<p >Like</p>;
     }
-    // const user = event => {
-    //     const cid=   event.currentTarget.id;
-        
-      
-    //        if(cid==girlfriends.gf.id){
-    //          girlfriends.push('/user')
-    //        }
-    //     }
+   
       
     
         return (
-            <div className="all_post_data"  >
+            <div className="all_post_data tracking-wider  "  >
     
                
                     <div  className="all_p_owner">
-                        <Link to={'/'+girlfriends.gf.url} id={girlfriends.gf.id}   >
-                            <img id={girlfriends.gf.id} key={girlfriends.gf.id}  className="p_o_p"   
-                            src={girlfriends.gf.pf}/>
+                        <Link to={`/User/${gf.id}`} id={gf.id}   >
+                            <img id={gf.id} key={gf.id}  className="p_o_p"   
+                            src={gf.image}/>
                         </Link>
                       
                         
-                        <Link  to={'/'+girlfriends.gf.url} className="p_o_n">
-                             <span id={girlfriends.gf.id} key={girlfriends.gf.id}  className="span">{girlfriends.gf.username}</span>
+                        <Link  to={'/'+gf.id} className="p_o_n">
+                             <span id={gf.id} key={gf.id}  className="span">{gf.title}</span>
                         </Link>
                         <div  className="p_opt">
                             <strong> . . .</strong>
@@ -59,12 +52,12 @@ const Post = (girlfriends) => {
                     </div>
             
                     <div  className="post_data">
-                        <div id={girlfriends.gf.id} key={girlfriends.gf.id}  className="p_d_tex">
-                        <p>{girlfriends.gf.description}</p>
+                        <div id={gf.id} key={gf.id}  className="p_d_tex">
+                        <p>{gf.description}</p>
                         </div>
             
                        
-                        <img id={girlfriends.gf.id} key={girlfriends.gf.id}  className='p_d_p' src={girlfriends.gf.image}/>
+                        <img id={gf.id} key={gf.id}  className='p_d_p' src={gf.image}/>
             
                        
                      
@@ -73,7 +66,7 @@ const Post = (girlfriends) => {
                    
                     <div  className="post_react">
                         <div  className="p_r_count">
-                            <div key={girlfriends.gf.id} id={girlfriends.gf.id}   className="p_l_c">
+                            <div key={gf.id} id={gf.id}   className="p_l_c">
                                 {like}{likec}
                             </div>
                             <div  className="p_c_c">
@@ -86,7 +79,7 @@ const Post = (girlfriends) => {
                         <div  className="p_r_data">
                             
                         
-                        <div type='submit' key={girlfriends.gf.id}  id={girlfriends.gf.id} onClick={()=> setState(state + 1)}  className="p_r_r">
+                        <div type='submit' key={gf.id}  id={gf.id} onClick={()=> setState(state + 1)}  className="p_r_r">
                             Like
                         </div>
                         <div  className="p_r_c">
