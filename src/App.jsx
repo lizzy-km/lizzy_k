@@ -16,7 +16,7 @@ import Group from "./components/group";
 import Mid from "./components/mid";
 import { useState, useEffect } from "react";
 import Loading from "./components/Loading";
-import { StateContextProvider } from "./Context/StateContext";
+import { StateContextProvider } from "./context/StateContext";
 
 // import Mid from "./components/mid";
 const App =()=> {
