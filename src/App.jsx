@@ -35,7 +35,6 @@ useEffect(()=>{
   fetchData()
 },[setProduct])
 
-// console.log(product)
 
 
   const fetchData = async () =>{
@@ -43,7 +42,6 @@ useEffect(()=>{
     const data = await api.json();
     setData(data)
     setProduct(data);
-    console.log(data)
 
 
 

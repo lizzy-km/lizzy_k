@@ -14,7 +14,6 @@ export const StateContext = createContext();
       fetchData()
     },[setProduct])
     
-    // console.log(product)
     
     
       const fetchData = async () =>{
