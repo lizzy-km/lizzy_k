@@ -5,7 +5,7 @@ import {Link, useParams } from "react-router-dom";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-const User = ({product})=>{
+const User = ({product,setProduct,data})=>{
   const {id} = useParams();
     
    const user =[
@@ -65,7 +65,7 @@ return (
             <div className="card_1 C_2">
         
         
-            <img className="c-img" src={user.cv} alt=""></img>
+            <img className="c-img" src={Iproduct.image} alt=""></img>
             <img id="pi" className="img p_hover " src={Iproduct.image} alt={Iproduct.title}></img>
             <p id="name" className=" u_n">
                 {Iproduct.title}
@@ -182,7 +182,7 @@ return (
                     <a href="">
                         <img   className="pe_m_p " 
                   
-                    src={user.image}
+                    src={Iproduct.image}
                      alt={Iproduct.title}/> 
                     </a>
                  

@@ -317,15 +317,10 @@ section{
   
   }
   .P_2>.card_1>.detail{
-    height: auto;
+    
     overflow-y: hidden;
     display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-    row-gap: 0px;
-    
-    background-color: transparent;
+   
   
   
   }
@@ -505,7 +500,7 @@ section{
 }
 .p-d{
   /* float: right; */
-  margin-top: -25px;
+  margin-top: -.5rem;
 }
 
 .u_n{
@@ -1132,28 +1127,24 @@ border-radius: 8px;
   border-bottom: 2px solid hsl(214, 100%, 59%);
 }
 .posts{
-  height: auto;
-  overflow-y: auto;
-  overflow-x: hidden;
+ 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
 }
 .posts .all_post{
-  margin-top: 0px;
+  /* margin-top: 0px;
   padding-top: 0px;
   max-height:900px;
   min-height: 900px;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 }
 .posts .mf_up{
-  margin-top: 80px;
-  margin-bottom: 30px;
+  /* margin-top: 80px;
+  margin-bottom: 30px; */
 }
 .detail .posts{
-  margin-top: -358px !important;
+  /* margin-top: -358px !important; */
  }
  .filter-card{
   margin-top: 2rem;
@@ -1220,7 +1211,7 @@ border-radius: 8px;
  }
 
 .posts .all_post_data{
-  margin-top: 60px;
+  /* margin-top: 60px; */
   /* padding-top: 60px; */
 }
 .all_post::-webkit-scrollbar{

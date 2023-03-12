@@ -165,7 +165,7 @@ return (
                     
                     
                 </div>
-                <div className="detail">
+                <div className="flex detail justify-between">
                 <div className="l_b">
 
 
@@ -249,7 +249,7 @@ return (
                     </div>
                 </div>
             </div>
-                <div className="posts">
+                <div className="posts flex flex-col ">
                     <div  className=" mf_up">
             <div  className="pe_h">
                 <div  className=" mf_pe">
