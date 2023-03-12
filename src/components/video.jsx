@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { StateContext } from '../Context/StateContext';
+import { StateContext } from '../context/StateContext';
 import VideoData from './VideoData';
 
 const video = () => {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import {Link, NavLink} from "react-router-dom";
-import { StateContext } from "../Context/StateContext";
+import { StateContext } from "../context/StateContext";
 import './top.css'
 // import toLo 
 
