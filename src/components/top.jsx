@@ -80,7 +80,7 @@ const Top = () => {
     <div class="top">
       <div className="nav_l">
         <div className="f p_hover">
-          <Link to='/'>
+          <Link onClick={'window.location.reload'} to='/'>
         <svg viewBox="0 0 36 36" class=" x1lliihq x1k90msu x2h7rmj x1qfuztq" fill="url(#jsc_s_2)" height="40" width="40">
           <defs>
           <linearGradient
